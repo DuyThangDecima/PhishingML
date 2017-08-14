@@ -1,0 +1,12 @@
+
+DB_HOST = "localhost"
+DB_PORT = 27017
+DB_MONGO_USER = ""
+DB_MONGO_PASSWORD = ""
+DB_NAME = "crawl"
+
+
+ELASTIC_IP = "10.60.106.7"
+ELASTIC_PORT = 9200
+ELASTIC_USER = "elastic"
+ELASTIC_PASSWORD = "G1a1PhapC0ngD0ng"
