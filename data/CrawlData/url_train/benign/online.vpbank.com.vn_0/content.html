@@ -1,0 +1,574 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VPBank</title>
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="VPBank, Internet Banking, i2b">
+    <meta name="description" content="VPBank - Internet Banking">
+    <meta property="og:site_name" content="vpb.com.vn">
+    
+    <link href="skins/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="skins/slider.css">
+    <link rel="stylesheet" type="text/css" href="skins/prettyPhoto.css">
+    <link href="skins/cssmenu_left.css" rel="stylesheet" type="text/css">
+    <link href="skins/keyboard.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="alternate" type="application/rss+xml" title="VPBank RSS" href="https://www.vpb.com.vn/rss.xml">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/tabcontent.js"></script>
+    <script type="text/javascript" src="js/jquery.common.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
+
+    <!-- Start js-light-box -->
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"> </script>
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function () {
+            if (localStorage['lang'] == '' || localStorage['lang'] == NaN || localStorage['lang'] == undefined || localStorage['lang'] == null) {
+                localStorage['lang'] = 'vi';
+            }
+            $("area[rel^='prettyPhoto']").prettyPhoto();
+
+            $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({ animation_speed: 'normal', theme: 'light_square', slideshow: 3000, autoplay_slideshow: true });
+            $(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({ animation_speed: 'fast', slideshow: 10000, hideflash: true });
+        });
+     </script>
+    
+    <!-- Start js-goto-top -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            // hide #back-top first
+            $("#back-top").hide();
+
+            // fade in #back-top
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('#back-top').fadeIn();
+                    } else {
+                        $('#back-top').fadeOut();
+                    }
+                });
+
+                // scroll body to 0px on click
+                $('#back-top a').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+            });
+
+        });
+	</script>
+	<!-- End js-goto-top --> 
+    
+    <!-- Start js-banner -->
+	<script type="text/javascript" src="js/bannerscript.js"> </script>
+	 
+	
+	<!-- Start js-scroller-->
+	<script type="text/javascript" src="js/jquery.nanoscroller.js"></script>
+	<script type="text/javascript">
+	    $(function () {
+
+	        $('.nano').nanoScroller({
+	            preventPageScrolling: true
+	        });
+
+	    });
+    </script>
+    
+	<!-- Start js-doitac -->
+	<script type="text/javascript" src="js/lib.min.js"></script>
+	<script type="text/javascript">
+	    $(function () {
+	        $(".main .jCarouselLite").jCarouselLite({
+	            btnNext: ".main .next",
+	            btnPrev: ".main .prev",
+	            speed: 500, auto: 1200
+	        });
+	    });
+	</script> 
+	
+	<!-- Start js-keyboard -->
+	<script type="text/javascript" src="js/keyboard.js"></script>    
+     
+    <!-- Start menu-left-panel -->  
+    <script type="text/javascript">
+        $(function () {
+
+            var menu_ul = $('.menu > li > ul'),
+                   menu_a = $('.menu > li > a');
+
+            menu_ul.hide();
+            menu_a.click(function (e) {
+                if (this.id != 'qa') {
+                    e.preventDefault();
+                }
+
+                if (!$(this).hasClass('active')) {
+                    menu_a.removeClass('active');
+                    menu_ul.filter(':visible').slideUp('normal');
+                    $(this).addClass('active').next().stop(true, true).slideDown('normal');
+                } else {
+                    $(this).removeClass('active');
+                    $(this).next().stop(true, true).slideUp('normal');
+                }
+            });
+
+            //Fuk
+            $(".service-notice .dv1").attr('src', 'images/' + ((localStorage['lang'] == 'vi') ? 'dv1.jpg' : 'div1en.jpg'));
+            $(".service-notice .dv2").attr('src', 'images/' + ((localStorage['lang'] == 'vi') ? 'dv2.jpg' : 'div2en.jpg'));
+            $(".service-notice .dv3").attr('src', 'images/' + ((localStorage['lang'] == 'vi') ? 'dv3.jpg' : 'div3en.jpg'));
+        });
+
+        function ChangeLang(lang) {
+            if (localStorage['lang'] != lang) {
+                localStorage['lang'] = lang;
+                $.ajax({
+                    type: "POST",
+                    data: { lang: lang },
+                    success: function (message) {
+                        window.location = message;
+                    }
+                });
+            }
+        }
+    </script>
+</head>
+<body>
+<form name="aspnetForm" method="post" action="./login.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY0NDMzMTk2MWRkstRv5ZAmKJx06njrOp3dxkuwk3Yh5x5uhFcBMBboQj8=">
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="52A94388">
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAT+Ivz0tDmnKEA9+XVFanZf2Ash7MP0OaQ34X+fUY2bXDVMwtaMdma8+tnxAArlR4sAZzbQs0ba5Q+nZq0/Kqfas7uox/+bG+T8WzjoDW6CUqE+XmFrD5fBUSlusiApU0s=">
+<div id="container">
+      <div class="header">
+        
+         <ul id="nav">
+            <li><a href="http://www.vpbank.com.vn/" target="_blank" title="" rel="nofollow">Trang chủ</a>|</li>
+            <li><a href="http://www.vpbank.com.vn/content/lien-he" target="_blank" title="" rel="nofollow">Liên hệ</a></li>
+         </ul><!--End-nav-->
+         
+         <div class="c-language"> 
+              <a onclick="ChangeLang('en');return false;" id="ctl00_ctl00_btnEnglish" href="javascript:__doPostBack('ctl00$ctl00$btnEnglish','')">English</a>|
+              <a onclick="ChangeLang('vi');return false;" id="ctl00_ctl00_btnVietnamese" href="javascript:__doPostBack('ctl00$ctl00$btnVietnamese','')">Vietnamese</a>
+         </div>
+
+         <div class="logo"><a title="logo-VPBank" href="#"><img src="skins/images/logo-vpb.png" alt="logo"></a></div><!--End-->
+         
+         <!--<h1 id="site-title">VPBank - Internet Banking</h1>-->
+         <h2 class="heading-title">
+            Ngân hàng trực tuyến cho khách hàng doanh nghiệp
+        </h2>
+         
+         <div class="hotline">
+            Dịch vụ khách hàng<br>
+            <span>04.39 288 880 - 1900 545 415</span>
+        </div><!--End-->
+  </div><!--End-header-->
+ 
+
+<div class="col_main_center">
+    
+    <div class="col_left_id">
+        
+    <div class="box-login" id="loginBox">
+        <h3 class="title">
+            Đăng nhập
+        </h3>
+        <div class="box-content" style="min-height: 200px">
+            <ul class="form-login">
+                <li id="errorMess" style="color: red; font-weight: normal; text-align: center; display: none">
+                    <img src="images/bullet-error.gif" id="img1" alt="">
+                    <label></label>
+                </li>
+                <li><span>Tên đăng nhập:<b>(*)</b></span><input type="text" id="uName" name="uName" key="UserName" class="keyboardInput" placeholder="Username"><img src="skins/images/icon_keyboard.jpg" alt="Keyboard interface" class="keyboardInputInitiator" title="Display graphical keyboard interface"></li>
+                <li><span>Mật khẩu:<b>(*)</b></span><input type="password" id="uPass" name="uPass" key="Password" class="keyboardInput" placeholder="Password"><img src="skins/images/icon_keyboard.jpg" alt="Keyboard interface" class="keyboardInputInitiator" title="Display graphical keyboard interface"></li>
+                <li><span>Nhập mã xác thực:<b>(*)</b></span><input style="width: 100px;text-align:center;font-weight:bold;" type="text" placeholder="" id="uCapCha" name="uCapCha" key="Capcha">
+                                                       <img src="skins/images/capcha.jpg" id="imgCapcha" style="width: 110px" alt=""></li>
+                <li>
+                    <span>&nbsp;</span>
+                    <input type="submit" name="ctl00$ctl00$mainPlaceHolder$leftPanel$btnLogin" value="Đăng nhập" onclick="return false;" id="ctl00_ctl00_mainPlaceHolder_leftPanel_btnLogin" class="button">
+                    <!--<input class="button" id="btnLogin" type="submit" onclick=" return false; " value="Đăng nhập" />-->
+                    <img id="loginLoading" style="width: 20px; height: 20px; margin-left: 5px; display: none;" alt="Waiting" src="images/ajax-loader.gif">
+                </li>
+                <li>
+                    <span style="width:100%;text-align:center;padding:2px 5px 5px 0px;">
+                        * Đồng ý với <a rel="nofollow" title="" target="_blank" href="stored/Dieu khoan su dung.pdf">Điều kiện-Điều khoản</a> của dịch vụ Ngân hàng trực tuyến Doanh nghiệp.
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div><!--End-box-login-->
+        
+     
+    <div class="box-service-vpb">
+        <div class="tabcontents">
+            <div id="view1" style="display: block;">
+                <ul class="gallery clearfix"></ul> 
+                <div class="fleft">
+                    <ul class="gallery clearfix">
+                        <li>
+                            <a title="Xem Video hướng dẫn" rel="prettyPhoto" href="test.swf?width=960&amp;height=480">
+                            <img src="images/ico-video.jpg" alt=" " width="350" height="177"></a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="view2" style="display: none;">
+                <div id="main-list-category">
+                    <div class="nano has-scrollbar">
+                        <div class="overthrow content description"> 
+                            <ul class="menu">
+                                <li class="item">
+                                    <a href="#">Chuyển khoản </a>
+                                    <ul>
+                                        <li>
+                                            <img src="images/logIntro/Chuyen khoan.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </li> 
+                                <li class="item">
+                                    <a href="#">Quản lý dòng tiền</a> 
+                                    <ul>
+                                        <li>
+                                            <img src="images/logIntro/Quan ly dong tien.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Thanh toán hóa đơn </a>
+                                    <ul>
+                                        <li>
+                                            <img src="images/logIntro/Thanh toan hoa don.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </li> 
+                                <li class="item">
+                                    <a href="#">Chuyển tiền nộp thuế</a> 
+                                    <ul>
+                                        <li>
+                                            <img src="images/logIntro/Chuyen tien nop thue.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Dịch vụ thẻ</a>
+                                    <ul>
+                                        <li>
+                                            <img src="images/logIntro/Dich vu the.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul><!--menu-->
+                        </div>
+                    </div>
+                </div>            
+            </div>
+            <div id="view3" style="display: none;">
+                <div id="main-list-category">
+                    <div class="nano has-scrollbar">
+                        <div class="overthrow content description"> 
+                              
+                            <ul class="menu">
+                                <li class="item">
+                                    <a id="qa" href="stored/QA.pdf" target="_blank">
+                                        Câu hỏi thường gặp
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a id="qa" href="stored/Dieu khoan su dung.pdf" target="_blank">
+                                        Điều khoản sử dụng
+                                    </a>
+                                    <!--<ul>
+                                        <li><a href="#">Nội dung a</a></li>
+                                        <li><a href="#">Nội dung a</a></li> 
+                                    </ul>-->
+                                </li>
+                                <li class="item">
+                                    <a id="qa" href="stored/Chinh sach bao mat.pdf" target="_blank">
+                                        Chính sách bảo mật
+                                    </a>
+                                    <!--<ul>
+                                            <li><a href="#">Nội dung a</a></li>
+                                            <li><a href="#">Nội dung b</a></li>
+                                        </ul>-->
+                                </li>
+                                <li class="item"><a href="#">Biểu phí sử dụng dịch vụ</a> </li>
+
+                                <li class="item">
+                                    <a href="#">Mẫu biểu</a> 
+                                    <ul>
+                                        <li>
+                                            <a id="A2" href="stored/MB01.QĐ-GDTC07 Đơn đăng ký dịch vụ ngân hàng trực tuyến doanh nghiệp.docx" target="_blank">
+                                                Đơn đăng ký dịch vụ ngân hàng trực tuyến doanh nghiệp
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a id="A3" href="stored/MB02.QĐ-GDTC07 Đơn đăng ký thay đổi dịch vụ ngân hàng trực tuyến doanh nghiệp.docx" target="_blank">
+                                                Đơn đăng ký thay đổi dịch vụ ngân hàng trực tuyến doanh nghiệp
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a id="A4" href="stored/MB03.QĐ-GDTC07 Thư xác nhận thiết bị bảo mật.docx" target="_blank">
+                                                Thư xác nhận thiết bị bảo mật
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a id="A5" href="stored/MB04.QĐ-GDTC07 Đơn yêu cầu chấm dứt sử dụng dịch vụ ngân hàng trực tuyến doanh nghiệp.docx" target="_blank">
+                                                Đơn yêu cầu chấm dứt sử dụng dịch vụ ngân hàng trực tuyến doanh nghiệp
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a id="A6" href="stored/MB05 QĐ-GDTC07 Hợp đồng cung cấp và sử dụng dịch vụ ngân hàng trực tuyến doanh nghiệp.docx" target="_blank">
+                                                Hợp đồng cung cấp và sử dụng dịch vụ ngân hàng trực tuyến doanh nghiệp
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a id="A7" href="stored/MB06.QĐ-GDTC07 Thông báo chấm dứt sử dụng dịch vụ ngân hàng trực tuyến doanh nghiệp.docx" target="_blank">
+                                                Thông báo chấm dứt sử dụng dịch vụ ngân hàng trực tuyến doanh nghiệp
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul><!--menu-->
+                   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <ul class="tabs" data-persist="true">
+            <li class="selected"><a href="#view1">Demo</a></li>
+            <li class=""><a href="#view2">Dịch vụ</a></li>
+            <li class=""><a href="#view3">Trợ giúp</a></li>            
+        </ul>
+        
+        
+    </div><!--End-box-service-vpb-->
+
+       <script type="text/javascript" language="javascript">
+           $(document).ready(function() {
+               b2b.login.initialize();
+           });
+
+           /*Javascript block code for login module
+            Author : DangTH - 21/01/2014 12:17 AM*/
+           var b2b = {};
+           b2b.login = {
+
+               /*Initialze function*/
+               initialize: function () {
+                   b2b.login.ctrs = {
+                       login: $("#" + "ctl00_ctl00_mainPlaceHolder_leftPanel_btnLogin"), /*button login*/
+                       loginBox: $('#loginBox'), /*box login*/
+                       imgCapcha: $('#imgCapcha'), /*capcha image*/
+                       userName: $('#uName'), /*username textbox*/
+                       password: $('#uPass'), /*password textbox*/
+                       capCha: $('#uCapCha')
+                   };
+
+                   //set capcha image
+                   b2b.login.ctrs.imgCapcha.attr('src', 'JpegImage.aspx?rnd=' + Math.random());
+
+                   /*register html control event handle*/
+                   b2b.login.ctrs.login.click(b2b.login.loginClick);
+
+                   b2b.login.ctrs.capCha.keyup(b2b.login.enterClick);
+               },
+
+               enterClick: function (e) {
+                   if (e.keyCode == 13) { b2b.login.loginClick(); }
+               },
+
+
+               /*button click event handle function*/
+               loginClick: function () {
+                   $('#errorMess').find('label').text('');
+                   $('#errorMess').hide();
+                   localStorage["actUrl"] = "default"; /*set caching's value to default*/
+                   $('#loginLoading').show();
+                   b2b.login.disableForm();
+                   ajax('login', b2b.login.ctrs.loginBox.getFormValues(),
+                       function (msg) {
+                           var data = $.parseJSON(msg);
+                           if (data.IsSuccess == 1) {
+                               window.location = data.Url;
+                           } else {
+                               $('#errorMess').show().find('label').text(data.Errors.loginError);
+                               $('#errorMess').show();
+                               $('#loginLoading').hide();
+                               b2b.login.enableForm();
+                               b2b.login.ctrs.imgCapcha.attr('src', 'JpegImage.aspx?rnd=' + Math.random());
+                           }
+                       },
+                       function (data, textStatus) {
+                       },
+                       function () {
+                       });
+               },
+
+               disableForm: function () { $.each(b2b.login.ctrs, function (key, value) { $(value).attr('disabled', true); }); },
+               enableForm: function () { $.each(b2b.login.ctrs, function (key, value) { $(value).removeAttr('disabled'); }); }
+           };
+       </script>
+ 
+
+        
+    </div>
+    <div class="col_right_id">
+        <div class="box-thongbao">
+            <h3 class="title">
+                Thông báo
+            </h3>
+            <div class="box-content">
+                <div class="col-slide">
+                    <div class="window">
+                        <div class="image_reel">
+						
+						<a href="http://www.vpbank.com.vn/bai-viet/doanh-nghiep-vua-va-nho/hoan-tien-den-2-trieu-dong-khi-thanh-toan-dich-vu-quang-cao-truc" target="_blank"><img src="images/logSlider/hoantien_gd.jpg" alt=""></a>
+						 <!--Type text here	
+						<a href="http://www.vpbank.com.vn/bai-viet/doanh-nghiep-vua-va-nho/hoan-tien-5-khi-mua-sam-thiet-bi-dien-tu-bang-doanh-nghiep-vpbiz" target="_blank"><img src="images/logSlider/hoantien_qc.jpg" alt=""/></a>
+						
+                            <a href="http://www.vpbank.com.vn/bai-viet/doanh-nghiep-vua-va-nho/sieu-uu-dai-cho-tin-dung-doanh-nghiep-vpbiz-mastercard" target="_blank"><img src="images/logSlider/hoantien_dt.jpg" alt=""/></a>	
+							-->	
+						<a href="http://www.vpbank.com.vn/bai-viet/doanh-nghiep-vua-va-nho/hoan-tien-den-5-khi-thanh-toan-chi-phi-mua-sam-tai-trung-tam-thuong" target="_blank"><img src="images/logSlider/hoantien_tttm.jpg" alt=""></a>
+						
+                        <a href="http://www.vpbank.com.vn/bai-viet/doanh-nghiep-vua-va-nho/hoan-tien-den-5-khi-thanh-toan-chi-phi-dat-phong-tai-khach-san" target="_blank"><img src="images/logSlider/hoantien_ks.jpg" alt=""></a>		
+						
+                            <a href="#" target="_blank"><img src="images/logSlider/Tai tro.jpg" alt=""></a>
+                            <a href="thungo.htm" target="_blank"><img src="images/slide2.png" alt=""></a>
+                            <a href="http://vpbank.com.vn/content/dang-ky-dich-vu-truc-tuyen" target="_blank"><img src="images/logSlider/Business.jpg" alt=""></a>
+                            <a href="http://vpbank.com.vn/bai-viet/thong-cao-bao-chi/vpbank-trien-khai-dich-vu-thu-ngan-sach-nha-nuoc" target="_blank"><img src="images/logSlider/Thu ngan sach.jpg" alt=""></a>
+                            <a href="http://vpbank.com.vn/san-pham/chuong-trinh/chuong-trinh-tai-tro-nha-phan-phoi-dai-ly" target="_blank"><img src="images/logSlider/tien_gui_online.jpg" alt=""></a>
+                            <a href="http://vpbank.com.vn/san-pham/dich-vu-tai-khoan/dich-vu-thu-chi-ho" target="_blank"><img src="images/logSlider/Thu chi ho.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="paging">
+                        <a href="#" name="bannerslide_btp" class="btpn"> 
+                            <img src="skins/images/arrow-left.png" alt=""> 
+                        </a>
+                        <a href="#" rel="1" name="btnumber" class="active" style="">1</a>
+                        <a href="#" rel="2" name="btnumber" style="">2</a>
+                        <a href="#" rel="3" name="btnumber" style="">3</a>
+                        <a href="#" rel="4" name="btnumber" style="">4</a>
+                        <a href="#" rel="5" name="btnumber" style="">5</a>
+                        <a href="#" rel="6" name="btnumber" style="">6</a>
+                        <a href="#" rel="7" name="btnumber" style="">7</a>
+                        <a href="#" rel="8" name="btnumber" style="">8</a>
+                        <a href="#" rel="9" name="btnumber" style="">9</a>                        
+						
+                        <a href="#" name="bannerslide_btn" class="btpn"> 
+                            <img src="skins/images/arrow-right.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="service-notice">
+            <li>
+                <img class="dv1" src="images/dv1.jpg" title="" alt="">
+                <a href="http://vpbank.com.vn/doanh-nghiep-vua-va-nho?language=vi" target="_blank">
+                    <div class="bg_deal">
+                        <!--Type text here-->
+                    </div>
+                </a>
+            </li>
+
+            <li>    
+                <img class="dv2" src="images/dv2.jpg" title="" alt="">
+                <a href="http://vpbank.com.vn/doanh-nghiep-lon?language=vi" target="_blank">
+                    <div class="bg_deal">
+                        <!--Type text here-->
+                    </div>
+                </a>
+            </li>
+            <li class="none">
+                <img class="dv3" src="images/dv3.jpg" title="" alt="">
+                <a href="http://vpbank.com.vn/doanh-nghiep-lon?language=vi" target="_blank">
+                    <div class="bg_deal">
+                        <!--Type text here-->
+                    </div>
+                </a>
+            </li>
+        </ul>       
+
+    </div><!--End-col_right_id-->
+
+</div><!-- End-col_main_center-->
+
+
+<div class="c-doitac">
+    <h2>
+        Đối tác của VPBank
+    </h2>
+</div>
+
+<div id="jCarouselLiteDemo">
+   <div class="carousel main">
+            <a href="#" class="prev">&nbsp;</a>
+            <div class="jCarouselLite">
+                <ul>
+                      <li><a href="" title="vietcombank"><img src="images/doitac/AA.jpg" alt="AA"></a></li>
+                      <li><a href="" title="vib"><img src="images/doitac/BAOKIM.jpg" alt="BAOKIM"></a></li>
+                      <li><a href="" title="vietinbank"><img src="images/doitac/Cungmua.jpg" alt="Cungmua"></a></li>
+                      <li><a href="" title="dongabank"><img src="images/doitac/EBANK.jpg" alt="EBANK"></a></li>
+                      <li><a href="" title="hdbank"><img src="images/doitac/EVN.jpg" alt="EVN"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/FPTOnline.jpg" alt="FPTOnline"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/GSM.jpg" alt="GSM"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/img1.png" alt="visa"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/img2.png" alt="visa"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/img3.png" alt="visa"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/img4.png" alt="visa"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/img5.png" alt="visa"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/img6.png" alt="visa"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/Ivivu.JPG" alt="Ivivu"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/Jetstar.jpg" alt="Jetstar"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/Megastar.JPG" alt="Megastar"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/Mekong.jpg" alt="Mekong"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/NGANLUONG.jpeg" alt="NGANLUONG"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/NguyenKim.jpg" alt="NguyenKim"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/onepay.JPG" alt="onepay"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/Pcworld.jpg" alt="Pcworld"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/pico.jpg" alt="pico"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/png.jpg" alt="png"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/Smartlink.jpg" alt="Smartlink"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/TGDIDONG.jpeg" alt="TGDIDONG"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/VatGia.jpg" alt="VatGia"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/VDCO.jpg" alt="VDCO"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/viettel.jpg" alt="viettel"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/VINAGAME.jpg" alt="VINAGAME"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/VINAPHONE.jpeg" alt="VINAPHONE"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/VJA.jpeg" alt="VJA"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/VMSPTL.jpg" alt="VMSPTL"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/VNA.jpg" alt="VNA"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/VNEXPRESS.jpg" alt="VNEXPRESS"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/vnpay.jpg" alt="vnpay"></a></li>
+                      <li><a href="" title="visa"><img src="images/doitac/VTCebank.jpg" alt="VTCebank"></a></li>
+                </ul>
+            </div>
+            <a href="#" class="next">&nbsp;</a>
+        </div>
+</div><!-- End jCarouselLiteDemo --> 
+ 
+<div class="gfooter">
+    <strong>
+        Ngân hàng Việt Nam Thịnh vượng VPBank © 2014.
+    </strong>
+    <br>
+    Trụ sở chính: 72 Trần Hưng Đạo, Hoàn Kiếm, Hà Nội.
+</div>
+ 
+</div><!--End of container-->
+
+<p id="back-top" style="display:block;">
+    <a href="#top"><span></span>Lên đầu trang</a>
+</p>
+</form>
+
+
+<!--Html&Css by ldhiep.design@mail.com - Mobile: 0988 982 284--></body></html>

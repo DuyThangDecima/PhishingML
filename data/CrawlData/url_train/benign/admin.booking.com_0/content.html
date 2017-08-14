@@ -1,0 +1,778 @@
+<!DOCTYPE html><!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]--><!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]--><!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]--><!--[if gt IE 8]><!--><html class=" js flexbox canvas canvastext webgl touch geolocation postmessage websqldatabase no-indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface generatedcontent video audio no-localstorage no-sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en" data-lang="vi" style=""><!--<![endif]--><head>
+        <link rel="dns-prefetch" href="https://q.bstatic.com/">
+        <link rel="dns-prefetch" href="https://r.bstatic.com/">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Booking.com Extranet</title>
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="cleartype" content="on">
+
+    <meta name="robots" content="nofollow">
+    <meta name="google-site-verification" content="tXoDPSNJoVzcJuCtY7oMOkCZh0Q9tq90NqBrgccuyF4">
+
+        
+    <link rel="stylesheet" href="https://r.bstatic.com/libs/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/hotel/hoteladmin/extranet_ng/static/css/modules/notification.v6399v.css">
+    <link rel="stylesheet" href="/hotel/hoteladmin/extranet_ng/static/css/modules/tooltip.v6399v.css">
+    <link rel="stylesheet" href="https://q.bstatic.com/backend_static/extranet/css/login_page/479f7b6dd2a31f3d3ae31a256322c9e3dab6d11a.css">
+    <link rel="stylesheet" href="/hotel/hoteladmin/extranet_ng/static/css/modules/new-login.v6399v.css">
+    <link rel="stylesheet" href="/hotel/hoteladmin/extranet_ng/static/css/booking_iconfont.v6399v.css">
+
+
+        <script src="/error_catcher?6399"></script>
+<script>
+    var booking = booking || {};
+    booking.PAGEVIEW_ID = "53fa7dd0663401ca";
+</script>
+
+
+        <!--[if lt IE 7]>
+            <link rel="stylesheet" href="/hotel/hoteladmin/c/ie6.v6399v.css">
+            <script src="/hotel/hoteladmin/j/vendor/DD_belatedPNG_0.0.8a-min.v6399v.js"></script>
+        <![endif]-->
+
+        <script src="https://r.bstatic.com/libs/modernizr/2.6.2/modernizr.custom.min.js"></script>
+
+
+        <!-- Hotjar Tracking Code -->
+        <!-- Add method load_hotjar=true in the single page you want to enable it -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:301883,hjsv:5};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+        </script><script async="" src="//static.hotjar.com/c/hotjar-301883.js?sv=5"></script>
+
+    
+        <script>
+            if (document.addEventListener) {
+                document.addEventListener("DOMContentLoaded", callback, false);
+            } else if (document.attachEvent) {
+                document.attachEvent("DOMContentLoaded", callback);
+            }
+            function callback() {
+                var win = window;
+                var doc = document;
+                var token                = '' || 'empty-token',
+                    eventCompliant       = typeof win.addEventListener === 'function',
+                    builder              = win.XMLHttpRequest || new win.ActiveXObject( 'Microsoft.XMLHTTP' ),
+                    isBuilderConstructor = builder.prototype && builder.prototype.send,
+                    send                 = isBuilderConstructor ? builder.prototype.send : builder.send;
+
+                if ( isBuilderConstructor ) {
+
+                    builder.prototype.send = sendWrapper;
+
+                } else {
+
+                    try {
+                        builder.send = sendWrapper;
+                    } catch ( e ) {}
+
+                }
+
+                if ( eventCompliant ) {
+
+                    var forms = document.getElementsByTagName("form");
+                    var i;
+                    for (i = 0; i < forms.length; i++) {
+                        forms[i].onsubmit = injectToken;
+                    }
+
+                } else if ( doc.attachEvent ) {
+
+                    doc.attachEvent( 'onmouseup', injectToken );
+                    doc.attachEvent( 'onkeydown', injectToken );
+
+                }
+
+                function sanitizeEvent( evt ) {
+
+                    return evt || win.event;
+
+                }
+
+                function eventType( evt ) {
+
+                    var e = sanitizeEvent( evt );
+
+                    return ( evt.type || '' ).toLowerCase();
+
+                }
+
+                function eventTarget( evt ) {
+
+                    var e = sanitizeEvent( evt );
+
+                    return e.target || e.srcElement;
+
+                }
+
+                function eventKeyCode( evt ) {
+
+                    var e = sanitizeEvent( evt );
+
+                    return e.keyCode || e.which;
+
+                }
+
+                function isEnterPressed( evt ) {
+
+                    return eventKeyCode( evt ) === 13;
+
+                }
+
+                function isSubmitButton( target ) {
+
+                    var isElement       = target && target.nodeName,
+                        isInputOrButton = isElement && /input|button/.test( target.nodeName.toLowerCase() );
+
+                    return isInputOrButton && target.type === 'submit';
+
+                }
+
+                function isForm( target ) {
+
+                    var isElement = target && target.nodeName;
+
+                    return isElement && target.nodeName.toLowerCase() === 'form';
+
+                }
+
+                function appendToken( form ) {
+
+                    var input;
+
+                    if (
+
+                        form &&
+                        form.method &&
+                        form.method.toLowerCase() === 'post' &&
+                        typeof form.elements.csrf_token === 'undefined'
+
+                    ) {
+
+                        input       =  doc.createElement( 'input' );
+                        input.name  = 'csrf_token';
+                        input.type  = 'hidden';
+                        input.value =  token;
+
+                        form.appendChild( input );
+
+                    }
+
+                }
+
+                function closestForm( target ) {
+
+                    var elem = target;
+
+                    while ( elem && ! isForm( elem ) ) {
+                        elem = elem.parentNode;
+                    }
+
+                    return elem;
+
+                }
+
+                function injectToken( evt ) {
+
+                    var type   = eventType( evt ),
+                        target = eventTarget( evt ),
+
+                        actions = {
+
+                            submit: function() {
+
+                                appendToken( target );
+
+                            },
+
+                            mouseup: function() {
+
+                                if ( isSubmitButton( target ) ) {
+                                    appendToken( closestForm( target ) );
+                                }
+
+                            },
+
+                            keydown: function() {
+
+                                if ( isEnterPressed( evt ) ) {
+                                    appendToken( closestForm( target ) );
+                                }
+
+                            }
+
+                        };
+
+                    ( actions[ type ] || Function() )();
+
+                    return true;
+
+                }
+
+                function sendWrapper() {
+                    if (!this.skipAddingCSRFHeader) {
+                        this.setRequestHeader( 'X-Booking-CSRF', token );
+                    }
+                    send.apply( this, [].slice.apply( arguments ) );
+
+                }
+
+            };
+
+        </script>
+
+<script async="" src="https://script.hotjar.com/modules-c889b710adc82176a8fbe7e0fe023a9b.js"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+
+    <body class="" data-module="none">
+        <div id="wrap">
+            <header role="banner" class="header ">
+                <div class="container-fluid">
+                    <a class="logo" href="/hotel/hoteladmin/general/dashboard.html?ses=418d2072991421256852bcd633440f1d&amp;lang=vi" title="Quay về trang chủ"><img src="/hotel/hoteladmin/i/logo.png?ses=418d2072991421256852bcd633440f1d&amp;lang=vi" alt="Biểu tượng công ty Booking.com"></a>
+
+
+
+
+
+                    <div class="header-title">
+                    </div>
+
+
+
+
+
+
+
+                    <div class="header-badges ">
+                        
+
+
+
+                        <a class="title-badge logout hide-text" title="Log out" href="/?logout=1;debug_from=title_buttons;ses=418d2072991421256852bcd633440f1d">Log out</a>
+
+
+                    </div>
+
+                </div>
+            </header>
+            <nav role="navigation" class="nav nav-main">
+                <div class="container-fluid">
+                    
+
+
+                </div>
+            </nav>
+
+            <div class="container-fluid">
+                <div class="row-fluid">
+
+                    <section class="content span12">
+                        
+                        
+
+<div>
+
+    <header class="row" id="header-login-admin">
+        <div class="col-md-6">
+            <a id="logo" href="https://admin.booking.com/index-admin.html?lang=vi"></a>
+            <div class="titletext">Extranet</div>
+        </div>
+        <div class="col-md-6">
+            <div id="lang-login">
+                <form id="lang_selector" method="GET" action="/">
+                    <select name="lang" id="lang" class="langDropdown" onchange="submit();">
+                        <option value="" disabled="disabled">
+                            
+                        </option>
+                        <option value="ar">العربية</option>
+                        <option value="bg">Български</option>
+                        <option value="ca">català</option>
+                        <option value="cs">čeština</option>
+                        <option value="da">dansk</option>
+                        <option value="de">Deutsch</option>
+                        <option value="el">Ελληνικά</option>
+                        <option value="en">English</option>
+                        <option value="xu">American English</option>
+                        <option value="xa">Español en Argentina</option>
+                        <option value="es">Español</option>
+                        <option value="et">Eesti</option>
+                        <option value="fi">Suomi</option>
+                        <option value="fr">français</option>
+                        <option value="he">עברית</option>
+                        <option value="hr">Hrvatski</option>
+                        <option value="hu">Magyar</option>
+                        <option value="id">Indonesia</option>
+                        <option value="is">íslenska</option>
+                        <option value="it">Italiano</option>
+                        <option value="ja">日本語</option>
+                        <option value="ko">한국어</option>
+                        <option value="lt">Lietuvių</option>
+                        <option value="lv">Latviešu</option>
+                        <option value="ms">Melayu</option>
+                        <option value="nl">Nederlands</option>
+                        <option value="no">Norsk</option>
+                        <option value="pl">polski</option>
+                        <option value="xb">Português do Brasil</option>
+                        <option value="pt">Português</option>
+                        <option value="ro">română</option>
+                        <option value="ru">Русский</option>
+                        <option value="sk">Slovenčina</option>
+                        <option value="sl">slovenščina</option>
+                        <option value="sr">srpski</option>
+                        <option value="sv">Svenska</option>
+                        <option value="th">ไทย</option>
+                        <option value="tl">Filipino</option>
+                        <option value="tr">Türkçe</option>
+                        <option value="uk">Українська</option>
+                        <option selected="1" value="vi">Tiếng Việt</option>
+                        <option value="zh">中文</option>
+                        <option value="xt">繁體中文</option>
+                    </select>
+                    <button id="change_language_button" class="btn-no-js" type="submit" style="visibility: hidden;">Change</button>
+                    <script type="text/javascript">
+                        (function() {
+                            window.document
+                                .getElementById('change_language_button')
+                                .style.visibility = "hidden"
+                        })();
+                    </script>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-md-5 section-form">
+            <!-- Start Login form -->
+                <div class="section-login">
+                    <div class="form-box form-box-login form-box-no-image">
+                        
+
+<h1 class="form-box__title form-box-login__title">
+    Đăng nhập để quản lý chỗ nghỉ 
+</h1>
+
+
+
+<form class="form-box-login__fields" role="form" method="POST">
+
+    <input type="hidden" name="lang" value="vi">
+    <div class="form_group">
+        <ul>
+        </ul>
+    </div>
+    <div class="form-group">
+        <label for="loginname">
+            Tên đăng nhập
+        </label>
+        <input id="loginname" class="form-control" type="text" placeholder="Nhập tên đăng nhập" name="loginname" value="" maxlength="40" tabindex="1" autofocus="autofocus" data-track-ga="login page, login_name, click">
+    </div>
+    <div class="form-group">
+        <label for="password">
+            Mật khẩu
+        </label>
+        <input id="password" name="password" value="" type="password" class="form-control" autocomplete="off" tabindex="2" data-track-ga="login page, password, click">
+    </div>
+    <div class="form-group">
+        <label for="language">
+            Ngôn ngữ
+        </label>
+        <select name="lang" class="form-control language-selector" tabindex="3" data-track-ga="login page, language_selector, click">
+                <option value="ar">
+                        العربية
+                </option>
+                <option value="bg">
+                        Български
+                </option>
+                <option value="ca">
+                        català
+                </option>
+                <option value="cs">
+                        čeština
+                </option>
+                <option value="da">
+                        dansk
+                </option>
+                <option value="de">
+                        Deutsch
+                </option>
+                <option value="el">
+                        Ελληνικά
+                </option>
+                <option value="en">
+                        English
+                </option>
+                <option value="xu">
+                        American English
+                </option>
+                <option value="xa">
+                        Español en Argentina
+                </option>
+                <option value="es">
+                        Español
+                </option>
+                <option value="et">
+                        Eesti
+                </option>
+                <option value="fi">
+                        Suomi
+                </option>
+                <option value="fr">
+                        français
+                </option>
+                <option value="he">
+                        עברית
+                </option>
+                <option value="hr">
+                        Hrvatski
+                </option>
+                <option value="hu">
+                        Magyar
+                </option>
+                <option value="id">
+                        Indonesia
+                </option>
+                <option value="is">
+                        íslenska
+                </option>
+                <option value="it">
+                        Italiano
+                </option>
+                <option value="ja">
+                        日本語
+                </option>
+                <option value="ko">
+                        한국어
+                </option>
+                <option value="lt">
+                        Lietuvių
+                </option>
+                <option value="lv">
+                        Latviešu
+                </option>
+                <option value="ms">
+                        Melayu
+                </option>
+                <option value="nl">
+                        Nederlands
+                </option>
+                <option value="no">
+                        Norsk
+                </option>
+                <option value="pl">
+                        polski
+                </option>
+                <option value="xb">
+                        Português do Brasil
+                </option>
+                <option value="pt">
+                        Português
+                </option>
+                <option value="ro">
+                        română
+                </option>
+                <option value="ru">
+                        Русский
+                </option>
+                <option value="sk">
+                        Slovenčina
+                </option>
+                <option value="sl">
+                        slovenščina
+                </option>
+                <option value="sr">
+                        srpski
+                </option>
+                <option value="sv">
+                        Svenska
+                </option>
+                <option value="th">
+                        ไทย
+                </option>
+                <option value="tl">
+                        Filipino
+                </option>
+                <option value="tr">
+                        Türkçe
+                </option>
+                <option value="uk">
+                        Українська
+                </option>
+                <option value="vi" selected="&quot;selected&quot;">
+                        Tiếng Việt
+                </option>
+                <option value="zh">
+                        中文
+                </option>
+                <option value="xt">
+                        繁體中文
+                </option>
+        </select>
+        <span class="select-arrow"></span>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block" tabindex="4" data-track-ga="login page, submit_button, click">
+        Đăng nhập
+    </button>
+    <a href="https://admin.booking.com/hotel/hoteladmin/reset_password.html?lang=vi" class="form-box__secondary-action" data-track-ga="login page, forgot_password, click">
+            Quên mật khẩu?
+    </a>
+</form>
+
+
+
+                        <div class="feedback">
+                            <span class="icon-attention"></span>
+                        </div>
+
+                        <div class="add-property-container text-center">
+                            <span>
+                                Chưa đăng ký?
+
+                                <a href="https://join.booking.com/?aid=875802&amp;lang=vi&amp;utm_campaign=v0&amp;utm_source=extranet_login_page&amp;utm_medium=extranet" data-track-ga="login page, add_property, click">
+                                    Đăng ký chỗ nghỉ của Quý vị ngay
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Login form -->
+        </div>
+    </section>
+
+    <section class="">
+        <p class="text-center">
+            Bằng việc đăng nhập, Quý vị đồng ý với <a href="https://www.booking.com/general.vi.html?tmpl=docs/terms_of_use" target="_blank">Các Điều Khoản Sử Dụng</a> cùng <a href="https://admin.booking.com/hotel/hoteladmin/privacy.html?lang=vi" target="_blank">Chính Sách Bảo Mật và Cookie</a> của chúng tôi.
+        </p>
+    </section>
+
+    <section id="security_ups">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center">Chúng tôi cam kết bảo vệ tính bảo mật của Quý vị.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <dl>
+                        <dt>Hãy giữ bí mật thông tin đăng nhập của Quý vị.</dt>
+                        <dd>Vì Quý vị được quyền biết các thông tin nhạy cảm của khách hàng, nên chúng tôi yêu cầu Quý vị giữ tên đăng nhập và mật khẩu của mình tuyệt đối bí mật.</dd>
+                    </dl>
+                </div>
+                <div class="col-md-4">
+                    <dl>
+                        <dt>Truy cập trang web của chúng tôi một cách an toàn.</dt>
+                        <dd>Dù Quý vị có sử dụng Chrome, Firefox, Internet Explorer hay bất cứ trình duyệt nào khác, đường dẫn URL của Quý vị phải luôn luôn là <strong>https://admin.booking.com</strong>.</dd>
+
+                    </dl>
+                </div>
+                <div class="col-md-4">
+                    <dl>
+                        <dt>Cẩn trọng hơn nữa.</dt>
+                        <dd>Tùy vào trình duyệt sử dụng, có thể Quý vị sẽ thấy một số dấu hiệu bảo mật tăng cường - thanh địa chỉ web sẽ có màu xanh lá hoặc xuất hiện biểu tượng ổ khóa.</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<script data-known="1">
+(function(){
+
+    var ajaxComplete,
+
+	    callback = function() {
+            var performance = window.performance || window.mozPerformance || window.msPerformance || window.webkitPerformance || {};
+            var navigation = performance.navigation;
+            var timing = performance.timing;
+            var info = (document.getElementById('req_info') || {}).innerHTML || '';
+
+            if ( !navigation || !timing )
+                return;
+
+            // make sure we get the last event
+            if ( timing.loadEventEnd == 0 ) {
+                setTimeout(callback, 1000);
+                return;
+            }
+
+            // keep the list ordered to stay compatible
+            (new Image()).src = '/navigation_times?pid=53fa7dd0663401ca&nts='
+                + navigation.type + ','
+                + navigation.redirectCount + ','
+                + timing.navigationStart + ','
+                + timing.unloadEventStart + ','
+                + timing.unloadEventEnd + ','
+                + timing.redirectStart + ','
+                + timing.redirectEnd + ','
+                + timing.fetchStart + ','
+                + timing.domainLookupStart + ','
+                + timing.domainLookupEnd + ','
+                + timing.connectStart + ','
+                + timing.connectEnd + ','
+                + timing.secureConnectionStart + ','
+                + timing.requestStart + ','
+                + timing.responseStart + ','
+                + timing.responseEnd + ','
+                + timing.domLoading + ','
+                + timing.domInteractive + ','
+                + timing.domContentLoadedEventStart + ','
+                + timing.domContentLoadedEventEnd + ','
+                + timing.domComplete + ','
+                + timing.loadEventStart + ','
+                + timing.loadEventEnd + ','
+                + '&first='
+                + '&cdn='
+                + '&dc=4'
+                + '&lang=vi'
+                + '&ref_app=hoteladmin'
+                + '&ref_action=index-admin'
+                + '&stype='
+                + '&aid=0'
+                + '&route=0'
+                + '&ch=e'
+                + '&info=' + info
+                + '&ac=' + ( ajaxComplete || +new Date )
+                
+            ;
+        };
+
+    var events,
+
+        win = Function( 'return this' )(),
+        doc = win.document,
+        $   = win.jQuery;
+
+    function ajaxStopDone() {
+
+        ajaxComplete = +new Date;
+        events.ajaxStop.resolve();
+
+    }
+
+    function anyActiveAjaxRequest() {
+
+        function isActive( flag ) {
+            return +flag === flag && flag > 0;
+        }
+
+        return isActive( $.active ) || isActive( $.ajax.active ) || false;
+
+    }
+
+    if ( $ && $.Deferred ) {
+
+        events = {
+
+            ajaxStop: $.Deferred(),
+            load:     $.Deferred()
+
+        };
+
+        $.when( events.ajaxStop, events.load ).then( callback );
+
+        $(function() {
+
+            setTimeout(function() {
+
+                if ( anyActiveAjaxRequest() ) {
+                    $( doc ).ajaxStop( ajaxStopDone );
+                } else {
+                    ajaxStopDone();
+                }
+
+            }, 0 );
+
+        });
+
+        $( win ).load( events.load.resolve );
+
+    } else {
+
+        if ( win.addEventListener ) {
+            win.addEventListener("load", callback, 0);
+        } else if ( typeof win.attachEvent !== "undefined" ) {
+            win.attachEvent("onload", callback);
+        }
+
+    }
+
+})();
+</script>
+
+
+                    </section>
+
+                </div>
+
+            </div>
+
+            <div id="push"></div>
+
+        </div> <!-- /wrap -->
+
+        <footer id="footer" role="contentinfo" class="opp-ntf-target">
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span5">
+                        <span class="footer_logo"></span>
+                        <p id="security_reminder">Vì Quý vị được quyền biết các thông tin nhạy cảm của khách hàng, nên chúng tôi yêu cầu Quý vị giữ tên đăng nhập và mật khẩu của mình tuyệt đối bí mật. Booking.com sẽ không bao giờ yêu cầu Quý vị cung cấp thông tin đăng nhập bằng bất cứ hình thức nào.</p>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12">
+                        <span class="footer_copyright">
+                            Bản quyền @ 1996-2017 Booking.com. Bảo lưu mọi quyền.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!-- JavaScript files go here -->
+        
+    <script src="https://q.bstatic.com/libs/jquery/1.11/jquery.min.js"></script>
+    <script src="https://r.bstatic.com/libs/jquery-cookie/1.3.1/jquery.cookie.custom.min.js"></script>
+    <script src="/hotel/hoteladmin/extranet_ng/static/js/cookie.warning.v6399v.js"></script>
+    <script src="/hotel/hoteladmin/extranet_ng/static/js/modules/event-names.v6399v.js"></script>
+    <script src="/hotel/hoteladmin/extranet_ng/static/js/modules/tooltip.v6399v.js"></script>
+    <script src="/hotel/hoteladmin/extranet_ng/static/js/login/index.v6399v.js"></script>
+    <script src="/hotel/hoteladmin/ec/ec.v6399v.js"></script>
+    <script src="/hotel/hoteladmin/ec/ui.json"></script>
+    <script src="/hotel/hoteladmin/bfp/bfp.v6399v.js" defer="defer"></script>
+    <script src="/hotel/hoteladmin/extranet_ng/static/js/login/ga_track_events.v6399v.js"></script><script src="//www.google-analytics.com/analytics.js"></script>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://admin.booking.com/hotel/hoteladmin/bfp/dependencies/fingerprint2.js"></script><div id="ads"></div><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/rcj-99d43ead6bdf30da8ed5ffcb4f17100c.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe></body></html>

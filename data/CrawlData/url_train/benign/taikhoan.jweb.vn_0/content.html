@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="description" content="Quản lý tài khoản trên hệ thống Jweb.vn">
+  <meta name="keywords" content="">
+  <title>Đăng nhập - Một tài khoản dành cho tất cả dịch vụ của Jweb</title>
+  <meta property="article:author" content="https://www.facebook.com/jwebvn">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:image" content="https://jweb.vn/uploads/demo/banner-facebook-hethongkinhdoanhonline-2.png">
+    <meta property="og:url" content="https://taikhoan.jweb.vn">
+    <meta property="og:title" content="Đăng nhập - Một tài khoản dành cho tất cả dịch vụ của Jweb">
+    <meta property="og:description" content="Quản lý tài khoản trên hệ thống Jweb.vn">  
+
+  <!-- Favicons-->
+  <link rel="icon" href="/favicon.png" sizes="32x32">
+  <!-- Favicons-->
+  <link rel="apple-touch-icon-precomposed" href="/template/id/images/favicon/apple-touch-icon-152x152.png">
+  <!-- For iPhone -->
+  <meta name="msapplication-TileColor" content="#19c656">
+  <meta name="msapplication-TileImage" content="/template/id/images/favicon/mstile-144x144.png">
+  <!-- For Windows Phone -->
+  <!-- CORE CSS-->
+  
+  <link href="/template/id/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="/template/id/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <!-- Custome CSS-->    
+  <link href="/template/id/css/custom-style.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <!-- CSS style Horizontal Nav (Layout 03)-->    
+  <link href="/template/id/css/style-horizontal.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="/template/id/css/page-center.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+  <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+  <link href="/template/id/css/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="/template/id/js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+  
+<style>
+  [type="checkbox"]:checked + label:before {
+    border-right: 2px solid #4caf50;
+    border-bottom: 2px solid #4caf50;
+
+  }
+  input[type=text]:disabled + label, input[type=text][readonly="readonly"] + label,
+  input[type=password]:disabled + label,
+  input[type=password][readonly="readonly"] + label,
+  input[type=email]:disabled + label,
+  input[type=email][readonly="readonly"] + label,
+  input[type=url]:disabled + label,
+  input[type=url][readonly="readonly"] + label,
+  input[type=time]:disabled + label,
+  input[type=time][readonly="readonly"] + label,
+  input[type=date]:disabled + label,
+  input[type=date][readonly="readonly"] + label,
+  input[type=datetime-local]:disabled + label,
+  input[type=datetime-local][readonly="readonly"] + label,
+  input[type=tel]:disabled + label,
+  input[type=tel][readonly="readonly"] + label,
+  input[type=number]:disabled + label,
+  input[type=number][readonly="readonly"] + label,
+  input[type=search]:disabled + label,
+  input[type=search][readonly="readonly"] + label,
+  textarea.materialize-textarea:disabled + label,
+  textarea.materialize-textarea[readonly="readonly"] + label {
+    color: rgba(0, 0, 0, 0.26); }
+    input[type=text]:focus:not([readonly]),
+    input[type=password]:focus:not([readonly]),
+    input[type=email]:focus:not([readonly]),
+    input[type=url]:focus:not([readonly]),
+    input[type=time]:focus:not([readonly]),
+    input[type=date]:focus:not([readonly]),
+    input[type=datetime-local]:focus:not([readonly]),
+    input[type=tel]:focus:not([readonly]),
+    input[type=number]:focus:not([readonly]),
+    input[type=search]:focus:not([readonly]),
+    textarea.materialize-textarea:focus:not([readonly]) {
+      border-bottom: 1px solid #4caf50;
+      box-shadow: 0 1px 0 0 #4caf50; }
+      input[type=text]:focus:not([readonly]) + label,
+      input[type=password]:focus:not([readonly]) + label,
+      input[type=email]:focus:not([readonly]) + label,
+      input[type=url]:focus:not([readonly]) + label,
+      input[type=time]:focus:not([readonly]) + label,
+      input[type=date]:focus:not([readonly]) + label,
+      input[type=datetime-local]:focus:not([readonly]) + label,
+      input[type=tel]:focus:not([readonly]) + label,
+      input[type=number]:focus:not([readonly]) + label,
+      input[type=search]:focus:not([readonly]) + label,
+      textarea.materialize-textarea:focus:not([readonly]) + label {
+        color: #4caf50; }
+        .input-field .prefix.active {
+          color: #4caf50; }	
+          .login-form {
+              width: 380px;
+          }
+          .text-center {text-align: center}
+          .error {color:#dc4848;}
+        </style></head>
+
+        <body class="cyan loaded">
+          <!-- Start Page Loading -->
+          <div id="loader-wrapper">
+            <div id="loader"></div>        
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+          </div>
+          <!-- End Page Loading -->
+          <div id="login-page" class="row">
+            <div class="col s12 z-depth-4 card-panel">
+              <form class="login-form" action="" method="post">
+                <div class="row">
+                  <div class="input-field col s12 center">
+                    <img src="/template/id/images/login-logo.png" alt="" class="circle responsive-img valign profile-image-login">
+                    <p class="center login-form-text">Một tài khoản dùng cho tất cả dịch vụ của Jweb</p>
+                  </div>
+                </div>
+                  
+                  
+                <div class="row margin">
+                  <div class="input-field col s12">
+                    <i class="mdi-social-person-outline prefix"></i>
+                    <input id="username" type="email" name="username" required="" value="">
+                    <label for="username" class="center-align">Địa chỉ Email</label>
+                  </div>
+                </div>
+                <div class="row margin">
+                  <div class="input-field col s12">
+                    <i class="mdi-action-lock-outline prefix"></i>
+                    <input id="password" type="password" name="password" required="">
+                    <label for="password">Mật khẩu</label>
+                  </div>
+                </div>
+                <div class="row">          
+                  <div class="input-field col s12 m12 l12  login-text">
+                    <input type="checkbox" id="remember-me" name="remember">
+                    <label for="remember-me">Ghi nhớ đăng nhập</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <button type="submit" name="login" value="1" class="btn waves-effect waves-light col s12 green">Đăng nhập</button>
+                  </div>
+                  <!-- <div class="col s12">
+                    <br>
+                    <center>hoặc</center>
+                  </div>
+                  <div class="input-field col s12">
+                    <a href="index.html" class="btn waves-effect waves-light col s12 blue darken-3">Đăng nhập bằng Facebook</a>
+                  </div> -->
+                </div>
+                <div class="row">
+                  <div class="input-field col s6 m6 l6">
+                    <p class="margin medium-small"><a href="https://jweb.vn" target="_blank">Đăng ký</a></p>
+                  </div>
+                  <div class="input-field col s6 m6 l6">
+                    <p class="margin right-align medium-small"><a href="/forgotpassword.html">Quên mật khẩu ?</a></p>
+                  </div>          
+                </div>
+
+              </form>
+            </div>
+
+            <p style="text-align:center;color:#fff">Đại lý vui lòng đăng nhập tại <a href="https://daily.jweb.vn" target="_blank" style="color:#fff">https://daily.jweb.vn</a></p>
+          </div>
+          <!-- jQuery Library -->
+          <script type="text/javascript" src="/template/id/js/jquery-1.11.2.min.js"></script>
+          <!--materialize js-->
+          <script type="text/javascript" src="/template/id/js/materialize.js"></script>
+          <!--prism-->
+          <script type="text/javascript" src="/template/id/js/prism.js"></script>
+          <!--scrollbar-->
+          <script type="text/javascript" src="/template/id/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+          <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+          <script type="text/javascript" src="/template/id/js/plugins.js"></script>
+
+  
+ <div class="hiddendiv common"></div></body></html>

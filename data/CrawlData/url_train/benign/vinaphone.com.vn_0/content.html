@@ -1,0 +1,258 @@
+<!--?xml version="1.0" encoding="UTF-8"?--><!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Đăng nhập Vinaportal</title>
+<link href="css/style-login2.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!--[if IE 6]>
+		<style type="text/css">
+        		.content-login .ul-login h4 {
+				
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 11px;
+				font-weight: normal;
+				color: #0183cf;
+				margin-top: 10px;
+				
+}
+.content-login .footer-login {
+	position: relative;
+	top: 230px;
+}
+
+.content-login .footer-login .login-ver {
+	height: 36px;
+	width: 66px;
+	position: relative;
+	left: 20px;
+	top: 40px;
+}
+
+.content-login .footer-login .conlogin .bq {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-align: justify;
+    position: relative;
+	left: 250px;
+	top: 20px;
+}
+
+.content-login .footer-login .conlogin .bq1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #666666;
+	text-align: justify;
+	position: relative;
+	left: 210px;
+	top: 20px;
+}
+
+.content-login .footer-login .conlogin .bq2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #666;
+	visibility: inherit;
+	float: left;
+	width: 400px;
+	top: 20px;
+	position: relative;
+	left: 170px;
+}
+
+        </style>
+<![endif]-->
+
+<!--[if IE 7]>
+		<style type="text/css">
+        		.content-login .ul-login h4 {
+				clear: both !important;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 11px;
+				font-weight: normal;
+				color: #0183cf;
+				margin-top: 10px;
+				float: left;
+}
+
+.content-login .footer-login {
+	position: relative;
+	top: 230px;
+}
+
+.content-login .footer-login .login-ver {
+	height: 36px;
+	width: 66px;
+	position: relative;
+	left: 20px;
+	top: 40px;
+}
+
+.content-login .footer-login .conlogin .bq {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-align: justify;
+    position: relative;
+	left: 250px;
+	top: 20px;
+}
+
+.content-login .footer-login .conlogin .bq1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #666666;
+	text-align: justify;
+	position: relative;
+	left: 210px;
+	top: 20px;
+}
+
+.content-login .footer-login .conlogin .bq2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #666;
+	visibility: inherit;
+	float: left;
+	width: 400px;
+	top: 20px;
+	position: relative;
+	left: 170px;
+}
+
+  
+        </style>
+<![endif]-->
+
+<!--[if IE 9]>
+		<style type="text/css">
+        	.content-login .footer-login .login-ver {
+	height: 36px;
+	width: 66px;
+	position: relative;
+	left: 20px;
+	top: -90px;
+}	
+
+        </style>
+<![endif]-->
+
+<style type="text/css">
+.img-dn {
+	float: left;
+	width: 50px;
+	margin-top: 110px;
+	
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.container-dn .img-bg .parent {
+	float: left;
+	width: 900px;
+	margin-left:200px;
+}
+.img-dn a img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+/* MESSAGES --------------------------------- */
+.info, .errors, .success {margin:0px 0; padding:0px 0px 0px 0px; font-size:10px; line-height:1.5;}
+.info {border:1px dotted 008;    background:#eff url(../images/info.gif) no-repeat 20px 18px; color:#008;}
+.errors {border:1px dotted #d21033; background:#fed url(../images/error.gif) no-repeat 0px 1px; color:#d21033; padding-bottom: 0px;}
+.success {border:1px dotted #390; background:#dfa url(../images/confirm.gif) no-repeat 20px 18px; color:#390;}
+    #content .errors h2, #content .success h2 {font-family:Georgia,"Times New Roman",Times,serif; font-size:18px; line-height:48px; font-weight:400; margin:0 0px 0 0; padding:0;}
+    #content .success h2 {color: #008 !important;}
+    #content .errors h2 {color:#b00 !important;}
+    #content .success h2 {color:#060 !important;}
+    
+</style>
+        
+        <!-- script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script -->
+        <!-- script type="text/javascript" src="js/common_rosters.js"></script -->
+        <!-- link href="vina.css" rel="stylesheet" type="text/css" / -->
+        <script type="text/javascript">
+function formalizeSubs() {
+	var subs = document.getElementById('username').value;
+	if (subs.substring(0,1)=='0') document.getElementById('username').value = '84'+subs.substring(1);
+}
+function checkField(){
+	var u = document.getElementById('username').value;
+	var p = document.getElementById('password').value;
+	if(u == "" || p ==  "")
+	{
+		alert("Mời bạn nhập số thuê bao và mật khẩu!");
+		document.getElementById('username').focus();
+		return false;
+	}else{
+		return true;
+	}
+
+}
+</script>
+</head>
+  
+<body id="cas" onload="init();">
+ 
+<div class="content-login">
+		<div class="ul-login">
+        		
+            		 <form id="fm1" class="fm-v clearfix" action="/auth/login;jsessionid=4BB923A479475044327735C0C194F948?service=http%3A%2F%2Fbilling.vinaphone.com.vn%2F" method="post" onsubmit="formalizeSubs();">
+                		<ul>
+                        		<li><span>Số thuê bao</span>
+								
+                                                            	
+                                                            
+                                                            <input id="username" name="username" class="number-login" tabindex="1" accesskey="n" type="text" value="" size="20" autocomplete="false">
+                                                            
+								
+								</li>
+                                <li><span>Mật khẩu</span>
+								 
+                                                            <input id="password" name="password" class="number-login" tabindex="2" accesskey="p" type="password" value="" size="20">
+								</li>
+								
+                                <!--<li><span>Mã bảo vệ</span><input type="text" name="text" class="number-login1" /><div class="capcha"><h2>a4rt56</h2></div></li>-->
+                                <li>
+								<input type="hidden" name="lt" value="2D2F65108305387991FE82B15F69BA5D97BEE2CEEEAB27419EAAEBE2ED39A58D2E6CE391C0DB1E1B17EF0986590DB003">
+                                                            <input type="hidden" name="_eventId" value="submit">
+                            		<input type="submit" name="dnstb" value="Đăng nhập" class="login-vn" onclick="return checkField()">
+									
+								 <input type="reset" name="dnstb" value="Hủy" class="login-vn1">
+                              
+                        </li></ul>
+              </form>
+                <br>
+				<br>
+                <h3>Nếu chưa là thành viên của VinaPortal, <a href="http://vinaphone.com.vn/personal/register.do">bấm vào đây</a> để đăng ký.</h3>
+                <h5>Trong trường hợp quên mật khẩu, Quý khách vui lòng gửi tin nhắn theo cú pháp: <b><font color="#666666" size="2">MK gửi tới số dịch vụ 333 (miễn phí)</font></b></h5>
+        </div><!--end .ul-login-->
+<div class="footer-login">
+        		<div class="login-ver"><a href="https://seal.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=WWW.VINAPHONE.COM.VN&amp;lang=en" tabindex="-1" onmousedown="return v_mDown();" target="VRSN_Splash"><img src="images/icon-dn.jpg" alt="Click to Verify - This site has chosen a VeriSign SSL Certificate to improve Web site security" name="seal" width="67" height="38" hspace="8" border="true" id="seal" oncontextmenu="return false;"></a></div>
+                <div class="conlogin">
+                		<div class="bq">Quy định và điều kiện sử dụng VinaPortal</div>
+                        <div class="bq1">Phát triển bởi VinaPhone 2005-2011. Bản quyền đã đăng ký.</div>
+                        <div class="bq2">Giấy phép số: 337/GP-BC do Bộ Thông tin - Truyền thông cấp ngày 10/11/2006.</div>
+                </div>
+  </div>
+</div>
+
+
+
+
+	
+
+
+ 
+ 
+
+</body></html>

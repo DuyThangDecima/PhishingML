@@ -1,0 +1,1544 @@
+<!DOCTYPE html><html class=" js cssanimations"><head>
+    <title>Đăng nhập - myK+</title>
+    <meta name="description">
+    <meta name="keywords">    
+    <meta charset="utf-8"> <!-- HTML5 Charset -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> <!-- HTML 4.1 Charset, support old browser -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="max-age=0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
+    <meta http-equiv="pragma" content="no-cache">
+    
+
+    <link href="/mykplus/Themes/kplus/Content/fonts/fonts.css?v=20160205" rel="stylesheet">
+    <link href="/mykplus/Themes/kplus/Content/css/font-awesome.css?v=20160205" rel="stylesheet">
+    <link href="/mykplus/Themes/kplus/Content/css/bootstrap.css?v=20160205" rel="stylesheet">
+    <link href="/mykplus/Themes/kplus/Content/css/jasny-bootstrap.min.css?v=20160205" rel="stylesheet">
+    <link href="/mykplus/Themes/kplus/Content/css/dialog/dialog.css?v=20160205" rel="stylesheet">
+    <link href="/mykplus/Themes/kplus/Content/css/dialog/dialog-don.css?v=20160205" rel="stylesheet">
+    <link href="/mykplus/Themes/kplus/Content/css/layerslider.css?v=20160205" rel="stylesheet">
+    <link href="/mykplus/Themes/kplus/Content/css/video-js.css?v=20160205" rel="stylesheet">
+    <link href="/mykplus/Themes/kplus/Content/css/animate.css?v=20160205" rel="stylesheet">
+    <link href="/mykplus/Themes/kplus/Content/css/magic.css?v=20160205" rel="stylesheet">
+    <link href="/mykplus/Themes/kplus/Content/css/spinner.css?v=20160205" rel="stylesheet">
+    <link href="/mykplus/Themes/kplus/Content/css/styles.css?v=20160205" rel="stylesheet">
+
+    <link href="/mykplus/Content/unify/custom.css?v=20160205" rel="stylesheet">
+    
+        <style>
+            .show-logged-in {
+                display: none !important;
+            }
+
+            .hide-logged-in {
+                display: block !important;
+            }
+        </style>
+
+    
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="/mykplus/Themes/kplus/Content/js/html5shiv.min.js"></script>
+        <script src="/mykplus/Themes/kplus/Content/js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 10]>
+        <link href="/mykplus/Themes/kplus/Content/css/ie.css" rel="stylesheet"/>
+        <style>
+            .wrong-version {
+                margin-bottom: 0;
+            }
+        </style>
+    <![endif]-->
+
+
+    <script type="text/javascript" src="//tags.tiqcdn.com/utag/xaxis/-kplus/prod/utag.js"></script><script type="text/javascript" id="tealium_controler_5955086527" src="https://tags.tiqcdn.com/utag/xaxis/kplus.vn/prod/utag.js"></script><script src="/mykplus/Themes/kplus/Content/js/modernizr.custom.js"></script>
+    <script src="/mykplus/Themes/kplus/Content/js/jquery.min.js"></script>
+
+
+    <!--[if lt IE 10]>
+        <script>
+            $(function() {
+                $('.before-body').css("margin-top", $('.header').outerHeight());
+                $('.wrong-version').on('closed.bs.alert', function() {
+                    $('.before-body').css("margin-top", $('.header').outerHeight());
+                });
+            })
+        </script>
+    <![endif]-->
+
+    
+
+    
+
+</head>
+<body>
+    
+    
+
+    <nav class="navbar navbar-default header">
+
+        <!--[if lt IE 10]>
+    <div class="alert alert-warning alert-dismissible wrong-version" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        Website hiển thị tốt nhất tr&#234;n c&#225;c tr&#236;nh duyệt Chrome, Firefox, Safari, Edge v&#224; Internet Explorer (phi&#234;n bản 10 trở l&#234;n)
+    </div>
+<![endif]-->
+            <div class="navbar-header visible-xs">
+                <div class="col-xs-2">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="visible-xs small-logo col-xs-8">
+                    <a href="/" target="_self">
+                        <img alt="Truyền hình số vệ tinh K+" class="img-responsive" src="https://cdn.kplus.vn/content/upload/7/images-mkt/truyen-hinh-kplus-logo.png" title="Truyền hình số vệ tinh K+">
+                    </a>
+                </div>
+                <div class="visible-xs col-xs-2">
+                    <button type="button" class="search-toggle collapsed" data-toggle="collapse" disabled="" style="opacity: 0;">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </div>
+            </div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+
+<div class="collapse navbar-collapse nav-fixed-left" id="bs-example-navbar-collapse-1">
+    <div class="container">
+        <div class="row top-header">
+            <div class="container-kplus">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                    <div class="pull-left">
+                        <a class="logo hidden-xs" href="/">
+                            <img alt="Truyền hình số vệ tinh K+" src="https://cdn.kplus.vn/content/upload/7/images-mkt/truyen-hinh-kplus-logo.png" title="Truyền hình số vệ tinh K+">                                        <span class="hidden-xs">Truyền hình số vệ tinh K+</span>
+                        </a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="pull-right">                        
+                        <input id="CurrentSite" name="CurrentSite" type="hidden" value="1">
+                        <div id="language-menu" class="hidden">
+                            <ul class="menu-languages">
+                                <li class="active">
+                                    <a tabindex="-1" href="#1">vi</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="#2">en</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="language-menu-mykplus" class="menu-right-item">
+                            <ul class="menu-languages">
+                                <li class="active">
+                                    <a tabindex="-1" href="/mykplus/vi-vn/home/changelang?Lang=vie&amp;ReturnUrl=https%253a%252f%252fwww.kplus.vn%252fmykplus%252fvi-vn%252faccount%252flogin">vi</a>
+                                </li>
+                                <li class="">
+                                    <a tabindex="-1" href="/mykplus/vi-vn/home/changelang?Lang=eng&amp;ReturnUrl=https%253a%252f%252fwww.kplus.vn%252fmykplus%252fvi-vn%252faccount%252flogin">en</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        
+
+                        
+
+
+<div class=" account-menu-container">
+    <ul class="account-menu level-1">
+        <li>
+            <a href="javascript:;" target="_self" class="btn-account-name show-logged-in">
+                <div class="text">Chào, </div>
+            </a>
+            <ul class="level-2">
+                <li>
+                    <a href="/mykplus/vi-vn/manage" target="_self">
+                        <div class="text">Tài khoản của tôi</div>
+                    </a>
+
+                    <div class="clear"></div>
+                </li>
+                
+                <li>
+
+                </li><li>
+<form action="/mykplus/vi-vn/account/logoff" id="logoutForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="VLEXbWxnmW_YkQNO1eCmSTdMqDQoKMp72_yXAJkmQU8Rh0nwx8Z3UJ9Sz1p77JR-vBU_QXPMclKZfXzkVSmwXwHM54DUPvgLbdO8e593TO01">                        <a href="javascript:document.getElementById('logoutForm').submit()" target="_self">
+                            <div class="text">Thoát</div>
+                        </a>
+</form>                    <div class="clear"></div>
+                </li>
+            </ul>
+
+            <div class="clear"></div>
+        </li>
+        <li>
+            <a href="/mykplus/vi-vn/account/register" class="btn-register hide-logged-in">
+                <div class="text"><span class="fa fa-user"></span>&nbsp;&nbsp;Đăng ký</div>
+            </a>
+
+            <div class="clear"></div>
+        </li>
+        <li>
+            <a href="javascript:;" target="_self" class="hide-logged-in">
+                <div class="text">|</div>
+            </a>
+            <div class="clear"></div>
+        </li>
+        <li>
+            <a href="/mykplus/vi-vn/account/login" target="_self" class="btn-login hide-logged-in">
+                <div class="text">Đăng nhập</div>
+            </a>
+
+            <div class="clear"></div>
+        </li>
+    </ul>
+    <div class="clearfix"></div>
+</div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row sub-header">
+            <div class="container-kplus">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="pull-left hidden-xs">
+                        <style>
+                            .main-menu {
+                                padding: 0;
+                                margin: 0;
+                                list-style: none;
+                                text-transform: none !important;
+                            }
+
+                                .main-menu > li:hover {
+                                    background-color: transparent !important;
+                                }
+
+                                .main-menu > li {
+                                    float: left;
+                                    height: 40px;
+                                    position: relative;
+                                    display: block;
+                                }
+
+                                    .main-menu > li > a {
+                                        color: #ffffff;
+                                        font-weight: normal;
+                                        font-size: 1.2em;
+                                        font-family: 'Open Sans', sans-serif;
+                                        position: relative;
+                                        display: block;
+                                        text-decoration: none;
+                                        padding: 0 20px;
+                                        margin: 5px 0;
+                                        height: 30px;
+                                        line-height: 30px;
+                                        border-left: solid 1px #414141;
+                                    }
+
+                                    .main-menu > li:first-child > a {
+                                        border-left: none;
+                                        padding-left: 0;
+                                    }
+
+                                    .main-menu > li:first-child.active > a {
+                                        padding-left: 20px;
+                                    }
+
+                                    .main-menu > li:last-child > a {
+                                        border-right: solid 1px #414141;
+                                    }
+
+                                    .main-menu > li.active {
+                                        background-color: #86c342;
+                                        color: #ffffff;
+                                    }
+
+                                        .main-menu > li.active > a {
+                                            border: none;
+                                        }
+
+                                    .main-menu > li:hover > a {
+                                        background-color: transparent;
+                                        color: #86c342;
+                                    }
+
+                                .main-menu li ul {
+                                    list-style: none;
+                                    padding: 0;
+                                    position: absolute;
+                                    top: 40px;
+                                    -moz-min-width: 100%;
+                                    -ms-min-width: 100%;
+                                    -o-min-width: 100%;
+                                    -webkit-min-width: 100%;
+                                    min-width: 100%;
+                                    z-index: 99999;
+                                    border: 1px solid #ffffff;
+                                    border: 1px solid rgba(255,255,255,.06); /* stroke */
+                                    border-top: solid 1px #86c342;
+                                    background-color: #191919; /* layer fill content */
+                                    -moz-box-shadow: -5px 0 5px rgba(0,0,0,.16); /* drop shadow */
+                                    -webkit-box-shadow: -5px 0 5px rgba(0,0,0,.16); /* drop shadow */
+                                    -ms-box-shadow: -5px 0 5px rgba(0,0,0,.16);
+                                    box-shadow: -5px 0 5px rgba(0,0,0,.16); /* drop shadow */
+                                    -ms-opacity: 0;
+                                    opacity: 0;
+                                    display: none;
+                                }
+
+                                .main-menu li > ul > li {
+                                    padding: 0px;
+                                }
+
+                                .main-menu li ul li a {
+                                    font-family: 'Open Sans', sans-serif;
+                                    font-size: 1em;
+                                    color: #fff;
+                                    font-weight: normal;
+                                    text-decoration: none;
+                                    display: block;
+                                    white-space: nowrap;
+                                    padding: 5px 25px;
+                                    line-height: 30px;
+                                }
+
+                                .main-menu li ul li.active a {
+                                    color: #86c342;
+                                }
+
+                                .main-menu li ul li a:hover {
+                                    color: #86c342;
+                                    background-color: #555;
+                                }
+
+                                .main-menu li .my-kplus-main-menu {
+                                    background: url("/Themes/kplus/Content/css/images/menu-mykplus.png") no-repeat 0 0 transparent;
+                                    width: 52px;
+                                    height: 27px;
+                                    display: block;
+                                    text-indent: -9999px;
+                                    margin: 9px 25px;
+                                }
+
+                                    .main-menu li .my-kplus-main-menu:hover {
+                                        background: url("/Themes/kplus/Content/css/images/menu-mykplus-hover.png") no-repeat 0 0 transparent;
+                                    }
+                        </style>
+                        <div class=" main-menu-container">
+                            
+                            <ul class="main-menu level-1">
+                                <li>
+                                    <a href="/trang-chu" title="Trang chủ" target="_self">
+                                        <div class="text"><span class="item"> <i class="fa fa-home"> </i> </span></div>
+
+                                    </a>
+
+                                    <div class="clear"></div>
+                                </li>                               
+                                <li>
+                                    <a href="#" target="_self">
+                                        <div class="text">Tiêu điểm</div>
+
+                                    </a>
+                                    <ul class="level-2">
+                                        <li>
+                                            <a href="/tieu-diem/lich-phat-song" target="_self">
+                                                <div class="text">Lịch phát sóng</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/tieu-diem/trailers" target="_self">
+                                                <div class="text">Trailers</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/tieu-diem/tin-tuc" target="_self">
+                                                <div class="text">Tin tức</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="clear"></div>
+                                </li>
+                                <li>
+                                    <a href="#" target="_self">
+                                        <div class="text">Mua K+</div>
+
+                                    </a>
+                                    <ul class="level-2">
+                                        <li>
+                                            <a href="/5-ly-do-nen-chon-kplus" target="_self">
+                                                <div class="text">5 lý do nên chọn K+</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/dich-vu/goi-kenh-premium-hd" target="_self">
+                                                <div class="text">Gói kênh</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/dich-vu/dong-phan-phoi" target="_self">
+                                                <div class="text">Đồng phân phối</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/dich-vu/multiroom" target="_self">
+                                                <div class="text">Multiroom</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/dich-vu/thiet-bi" target="_self">
+                                                <div class="text">Thiết bị</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="clear"></div>
+                                </li>
+                                <li>
+                                    <a href="#" target="_self">
+                                        <div class="text">Hỗ trợ</div>
+
+                                    </a>
+                                    <ul class="level-2">
+                                        <li>
+                                            <a href="/ho-tro/gia-han-truc-tuyen" title="Gia hạn thuê bao K+ trực tuyến online trên website bằng các loại thẻ ngân hàng" target="_self">
+                                                <div class="text">Gia hạn trực tuyến</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/ho-tro/dang-ky-lap-dat" target="_self">
+                                                <div class="text">Đăng ký lắp đặt</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/ho-tro/cac-cach-gia-han" target="_self">
+                                                <div class="text">Các cách gia hạn</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/ho-tro/cac-cach-dang-ky" target="_self">
+                                                <div class="text">Các cách đăng ký</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/ho-tro/danh-sach-dai-ly" target="_self">
+                                                <div class="text">Tìm Đại lý gần nhất</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/ho-tro/cau-hoi-thuong-gap" target="_self">
+                                                <div class="text">Câu hỏi thường gặp</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/ho-tro/lien-he" target="_self">
+                                                <div class="text">Liên hệ</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="clear"></div>
+                                </li>
+                                <li class="active">
+                                    <a href="#" target="_self">
+                                        <div class="text"><img alt="myK+ logo" class="img-responsive" height="28" src="https://cdn.kplus.vn/content/upload/1/images-mkt/mykplus-logo-new-08-2016.png" width="50"></div>
+
+                                    </a>
+                                    <ul class="level-2">
+                                        <li class="active">
+                                            <a href="/my-kplus/gioi-thieu-mykplus" target="_self">
+                                                <div class="text">Giới thiệu myK+</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/my-kplus/cach-dang-ky-tai-khoan" target="_self">
+                                                <div class="text">Cách đăng ký myK+</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/mykplus/vi-vn/livetv" target="_self">
+                                                <div class="text">Xem TV trực tuyến</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/mykplus/vi-vn/manage" target="_self">
+                                                <div class="text">Tài khoản của tôi</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/my-kplus/hoi-dap-dich-vu-mykplus" target="_self">
+                                                <div class="text">Hỏi đáp về myK+</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="clear"></div>
+                                </li>
+
+                                <li>
+                                    <a href="#" target="_self">
+                                        <div class="text"><img alt="Gói mới myK+ NOW" class="img-responsive" height="25" src="https://cdn.kplus.vn/content/upload/1/images-mkt/myk-now-white-logo.png" width="78"></div>
+
+                                    </a>
+                                    <ul class="level-2" style="opacity: 0;">
+                                        <li>
+                                            <a href="/mykplus-now/gioi-thieu-goi-kenh-moi" target="_self">
+                                                <div class="text">Giới thiệu gói mới</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/mykplus-now/cach-dang-ky-xem-ngay" target="_self">
+                                                <div class="text">Cách đăng ký xem ngay</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/mykplus-now/hoi-dap" target="_self">
+                                                <div class="text">Hỏi đáp</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="clear"></div>
+                                </li>
+                            </ul>
+
+
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="pull-right">
+                        <div class="menu-right-item form-group search-box">
+                            <form action="/tim-kiem" method="GET" target="_self">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm" name="term">
+                                <span class="postfix glyphicon glyphicon-search"></span>
+                            </form>
+                        </div>
+                        <style>
+            .main-menu-mobile-container{
+	display:none;
+}
+
+@media (max-width: 767px) {
+	.main-menu-mobile-container {
+		display:block;
+		border-top:1px solid #424242;
+                overflow: auto;
+                z-index: 99999;
+	}
+
+	.main-menu-mobile-container ul {
+		list-style:none;
+		padding: 0 15px;
+	}
+
+	.main-menu-mobile-container > ul.level-1 {
+              padding-bottom: 80px;
+	}
+
+	.main-menu-mobile-container ul.level-1 > li {
+		position:relative;
+		font-family: 'Glyphicons Halflings';
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		margin-left:0px;
+		margin-right:0px;
+		border-bottom:1px solid #aaa;
+	}
+
+	.main-menu-mobile-container ul.level-1 > li a:before {
+		content:"\e252";
+		color:#ffffff;
+		position:absolute;
+		top:0px;
+		right:15px;
+	}
+
+       .main-menu-mobile-container ul.level-1 > li:first-child a:before {
+                content: "";
+       }
+
+	.main-menu-mobile-container ul.level-1 > li.active a:before {
+		content:"\e253";
+	}
+
+	.main-menu-mobile .text {
+	        color: #ffffff;
+		font-weight: 700;
+		font-size: 1em;
+		font-family: 'VNF-Futura', sans-serif;
+		text-decoration: none;
+		-webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		-ms-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	}
+
+	.main-menu-mobile li.selected > a > .text, .main-menu-mobile-container ul > li.selected > a:before {
+		color: #85c341;
+	}
+
+	.main-menu-mobile ul.level-2 {
+		display:none;
+	}
+
+	.main-menu-mobile ul.level-2 .text {
+		font-weight:normal;
+	}
+
+        .main-menu-mobile ul.level-2 > li a:before {
+               display: none;
+        }
+}
+                        </style>
+                        <div class=" main-menu-mobile-container">
+                            
+                            <ul class="main-menu-mobile level-1">
+                                <li>
+                                    <a href="/home" target="_self">
+                                        <div class="text">Home</div>
+
+                                    </a>
+
+                                    <div class="clear"></div>
+                                </li>
+                                <li>
+                                    <a href="#" target="_self">
+                                        <div class="text">Highlights</div>
+
+                                    </a>
+                                    <ul class="level-2">
+                                        <li>
+                                            <a href="/highlights/broadcast-schedule" target="_self">
+                                                <div class="text">Broadcast schedule</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/highlights/trailers" target="_self">
+                                                <div class="text">Trailers</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/highlights/news" target="_self">
+                                                <div class="text">News</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="clear"></div>
+                                </li>
+                                <li>
+                                    <a href="#" target="_self">
+                                        <div class="text">Get K+</div>
+
+                                    </a>
+                                    <ul class="level-2">
+                                        <li>
+                                            <a href="/services/5-reasons-to-choose-Kplus" target="_self">
+                                                <div class="text">5 reasons to choose Kplus</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/services/premiumhd-package" target="_self">
+                                                <div class="text">Channel packages</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/services/co-distributors" target="_self">
+                                                <div class="text">Co-distributors</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/services/multiroom" target="_self">
+                                                <div class="text">Multiroom</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/services/set-top-boxes" target="_self">
+                                                <div class="text">Set-top-boxes</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="clear"></div>
+                                </li>
+                                <li>
+                                    <a href="#" target="_self">
+                                        <div class="text">Support</div>
+
+                                    </a>
+                                    <ul class="level-2">
+                                        <li>
+                                            <a href="/support/online-renewal" target="_self">
+                                                <div class="text">Online renewal</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/support/installation-registration" target="_self">
+                                                <div class="text">Installation registration</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/support/how-to-renew" target="_self">
+                                                <div class="text">How to renew?</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/support/how-to-subscribe" target="_self">
+                                                <div class="text">How to subscribe?</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/support/find-the-nearest-store" target="_self">
+                                                <div class="text">Find the nearest K+ store</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/supports/faq" target="_self">
+                                                <div class="text">FAQ</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/supports/contact" target="_self">
+                                                <div class="text">Contact</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="clear"></div>
+                                </li>
+                                <li class="selected">
+                                    <a href="#" target="_self">
+                                        <div class="text"><img alt="myK+ logo" class="img-responsive" height="28" src="https://cdn.kplus.vn/content/upload/1/images-mkt/mykplus-logo-new-08-2016.png" width="50"></div>
+
+                                    </a>
+                                    <ul class="level-2">
+                                        <li class="selected">
+                                            <a href="/my-kplus/mykplus-introduction" target="_self">
+                                                <div class="text">myK+ Introduction</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/my-kplus/how-to-register-for-mykplus-account" target="_self">
+                                                <div class="text">How to register for myK+</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/mykplus/en-us/livetv" target="_self">
+                                                <div class="text">Watch Live TV</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/mykplus/en-us/manage" target="_self">
+                                                <div class="text">My Account</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li>
+                                            <a href="/my-kplus/faq-about-mykplus" target="_self">
+                                                <div class="text">FAQ about myK+</div>
+
+                                            </a>
+
+                                            <div class="clear"></div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="clear"></div>
+                                </li>
+                            </ul>
+
+
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </nav>
+
+    <div class="before-body container">
+        
+        <div class="breadcrumb-container row">
+    <div class="container-kplus">
+        <div class="col-md-12 col-xs-12">
+            <ul class="breadcrumb">
+                <li class=""><a data-format-text="" href="/mykplus/vi-vn">My K+</a></li>                    
+                <li class="active"><a data-format-text="" href="/mykplus/vi-vn/account/login">Đăng nhập</a></li>
+            </ul>
+            <h2 class="title">
+                <span>Đăng nhập</span>
+            </h2>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="body container" style="margin-top: 0px;">        
+        <div class="row margin-top-20">
+            <div class="container-kplus">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+
+                    
+
+
+
+
+
+<div class="row margin-bottom-20">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-2 col-sm-6 col-sm-offset-2">
+
+                
+<section id="loginForm">
+
+<form action="/mykplus/vi-vn/account/login" class="reg-page" method="post" role="form" novalidate="novalidate"><input name="__RequestVerificationToken" type="hidden" value="ZsDVkOiOETQ-BHfZ8kXmZcOArfYAVREvnOsxx4dRLspQGN_IuU1MjFlAltbpe67s61npUGZrMzwhiXAoIQUFZM7hF8AuW2-_lsRav1k_TqM1">        <div class="reg-header">
+            <h2>Đăng nhập tài khoản</h2>
+        </div>
+
+        <div class="form-group margin-bottom-20">
+            <div class="input-group ">
+                <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                <input class="form-control" data-val="true" data-val-email="Địa chỉ email chưa đúng định dạng. Vui lòng kiểm tra lại." data-val-required="Hãy điền địa chỉ email." id="Email" name="Email" placeholder="Địa chỉ Email" type="text" value="">
+            </div>
+            <span class="field-validation-valid text-danger help-block" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+        </div>
+        <div class="form-group margin-bottom-20">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-lock fa-fw"></i></span>
+                <input class="form-control" data-val="true" data-val-required="Hãy điền mật khẩu." id="Password" name="Password" placeholder="Mật khẩu" type="password">
+            </div>
+            <span class="field-validation-valid text-danger help-block" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+        </div>        
+        <div class="row">
+            <div class="col-md-6">
+                <label class="checkbox" style="margin-left:20px;">
+                    <input data-val="true" data-val-required="The Ghi nhớ? field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true"><input name="RememberMe" type="hidden" value="false">
+                    Ghi nhớ?
+                </label>                
+            </div>
+            <div class="col-md-6">
+                <button class="btn-u pull-right" type="submit">Đăng nhập</button>
+            </div>
+        </div>
+        <hr>
+        <h4>Quên mật khẩu ?</h4>
+        <p><a class="color-green" href="/mykplus/vi-vn/account/forgetpassword">Không phải lo lắng, bấm vào đây để đặt lại mật khẩu của bạn.</a></p>
+</form>
+</section>
+<script type="text/javascript" id="lightning_bolt" src="//cdn-akamai.mookie1.com/LB/LightningBolt.js"></script>
+               
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        
+        <div class="col-md-9 col-md-offset-2 col-sm-6 col-sm-offset-2 margin-top-20">           
+         
+
+            <div class="headline"><h2>Chưa có tài khoản ?</h2></div>
+            <p><a class="btn-u btn-u-small" href="/mykplus/vi-vn/account/register">
+                <i class="fa fa-location-arrow"></i> Đăng ký ngay</a></p>
+
+            <p>Xem truyền hình trực tiếp trên nhiều thiết bị bao gồm: điện thoại di động, máy tính bảng và máy tính để bàn.</p>
+
+            <hr class="devider devider-db">
+
+
+            <div class="headline"><h2>Chưa đăng ký thuê bao K+ ?</h2></div>
+            <p><a class="btn-u btn-u-small" href="/ho-tro/cac-cach-dang-ky"><i class="fa fa-location-arrow"></i> Đăng ký ngay</a></p>
+
+            <p>Thưởng thức nhiều kênh truyền hình đặc sắc chỉ có trên Hệ thống K+.</p>
+            
+        </div>
+               
+    </div>
+</div>
+
+
+
+
+
+
+
+                    
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="container-kplus padding-right-10">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        
+
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+<div class="row footer">
+    <a class="back-to-top" href="javascript:void(0);" onclick="backToTop();"><span class="fa fa-angle-up fa-2x"></span></a>
+    <div class="container-kplus">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="footer-title">
+                <a class="logo" href="/">
+                    <img alt="Truyền hình số vệ tinh K+" src="https://cdn.kplus.vn/content/upload/7/images-mkt/truyen-hinh-kplus-logo.png" title="Truyền hình số vệ tinh K+">
+                </a>
+            </div>
+            <div class="desc">
+                Dịch vụ truyền hình trả tiền cao cấp với nội dung độc quyền, nhóm kênh phong phú, phủ sóng toàn quốc, chất lượng HD và nhiều dịch vụ tiện ích.
+            </div>
+            <div class="social-icon">
+                <a class="facebook" href="https://www.facebook.com/truyenhinhsovetinhkplus" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+
+                <a class="google" href="https://plus.google.com/u/0/115809868389011444366/posts" target="_blank">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="youtube" href="https://www.youtube.com/user/truyenhinhkplus/" target="_blank">
+                    <i class="fa fa-youtube-play"></i>
+                </a>
+                <div class="clearfix"></div>
+            </div>
+            <style>
+                .footer-links-container {
+                    margin-top: 20px;
+                }
+
+                .footer-links {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    width: 100%;
+                }
+
+                    .footer-links li {
+                        margin: 10px 0 0 0;
+                    }
+
+                        .footer-links li a {
+                            display: block;
+                            position: relative;
+                            color: #fff;
+                            overflow: hidden;
+                        }
+
+                            .footer-links li a:hover {
+                                color: #86c342;
+                            }
+
+                            .footer-links li a span {
+                                margin-right: 5px;
+                            }
+            </style>
+            <!--
+            <div class=" footer-links-container">
+                <ul class="footer-links level-1">
+                    <li>
+                        <a href="#" target="_self" class="film-community">
+                            <div class="text"><span class="fa fa-arrow-right"></span>Cộng đồng giải trí</div>
+                        </a>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <a href="/" target="_self" class="football-community">
+                            <div class="text"><span class="fa fa-arrow-right"></span>Cộng đồng bóng đá</div>
+                        </a>
+                        <div class="clear"></div>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            -->
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 pull-right">
+            <h4 class="footer-title">Liên hệ</h4>
+            <div class="text">Công ty TNHH truyền hình số vệ tinh Việt Nam</div>
+            <div class="text"><span class="fa fa-map-marker"></span> Tầng 15, Tháp A, Tòa nhà Handi Resco, 521 Kim Mã, quận Ba Đình, Hà Nội, Việt Nam</div>
+            <div class="text half"><span class="fa fa-phone"></span> +84 4 6272 6600</div>
+            <div class="text half"><span class="fa fa-fax"></span> +84 4 3771 4781</div>
+            <div class="clearfix"></div>
+            <div class="text half"><span class="fa fa-globe"></span> www.kplus.vn</div>
+            <div class="text half"><span class="fa fa-envelope"></span> kplus@vstv.vn</div>
+            <div class="clearfix"></div>
+            <h4 class="footer-title">Tổng đài chăm sóc khách hàng 24/7</h4>
+            <div class="phone"><span class="fa fa-phone"></span> 19001592</div>
+            <h4 class="footer-title">Đối tác đồng phân phối</h4>
+            <div>
+                <style type="text/css">
+                    .codistributor-icon {
+                        width: 19%;
+                        float: left;
+                        margin-right: 1%;
+                        position: relative;
+                    }
+
+                        .codistributor-icon img {
+                            z-index: 10;
+                            height: auto;
+                            max-width: 100%;
+                            text-align: center;
+                            position: relative;
+                            display: inline-block;
+                            -webkit-backface-visibility: hidden;
+                            -moz-backface-visibility: hidden;
+                            -ms-backface-visibility: hidden;
+                            backface-visibility: hidden;
+                            -webkit-transition: all 0.5s;
+                            -moz-transition: all 0.5s;
+                            -ms-transition: all 0.5s;
+                            -o-transition: all 0.5s;
+                            transition: all 0.5s;
+                        }
+
+                        .codistributor-icon .img-hover {
+                            z-index: 5;
+                            display: block;
+                            visibility: hidden;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background-color: #86c342;
+                            -webkit-backface-visibility: hidden;
+                            -moz-backface-visibility: hidden;
+                            -ms-backface-visibility: hidden;
+                            backface-visibility: hidden;
+                            -webkit-transform: rotateY(-180deg);
+                            -moz-transform: rotateY(-180deg);
+                            -ms-transform: rotateY(-180deg);
+                            -o-transform: rotateY(-180deg);
+                            transform: rotateY(-180deg);
+                            -webkit-transition: all 0.5s;
+                            -moz-transition: all 0.5s;
+                            -ms-transition: all 0.5s;
+                            -o-transition: all 0.5s;
+                            transition: all 0.5s;
+                        }
+
+                        .codistributor-icon .title {
+                            color: #fff;
+                            font-size: 14px;
+                            padding: 0 10px;
+                            display: block;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            position: absolute;
+                            top: 50%;
+                            text-align: center;
+                            -webkit-transform: translateY(-50%);
+                            -moz-transform: translateY(-50%);
+                            -o-transform: translateY(-50%);
+                            transform: translateY(-50%);
+                            width: 100%;
+                        }
+
+                        .codistributor-icon:hover img {
+                            visibility: hidden;
+                            -webkit-transform: rotateY(180deg);
+                            -moz-transform: rotateY(180deg);
+                            -ms-transform: rotateY(180deg);
+                            -o-transform: rotateY(180deg);
+                            transform: rotateY(180deg);
+                        }
+
+                        .codistributor-icon:hover .img-hover {
+                            visibility: visible;
+                            -webkit-transform: rotateY(0);
+                            -moz-transform: rotateY(0);
+                            -ms-transform: rotateY(0);
+                            -o-transform: rotateY(0);
+                            transform: rotateY(0);
+                        }
+                </style>
+                <a class="codistributor-icon" href="/dich-vu/dong-phan-phoi#tabpane0"><img class="img-responsive" src="/mykplus/content/images/logo2.png"> <span class="img-hover"><span class="title">VTV Cab</span></span> </a> <a class="codistributor-icon" href="/dich-vu/dong-phan-phoi#tabpane1"><img class="img-responsive" src="/mykplus/content/images/logo3.png"> <span class="img-hover"><span class="title">myTV</span></span> </a> <a class="codistributor-icon" href="/dich-vu/dong-phan-phoi#tabpane2"><img class="img-responsive" src="/mykplus/content/images/logo4.png"> <span class="img-hover"><span class="title">FPT</span></span> </a> <a class="codistributor-icon" href="/dich-vu/dong-phan-phoi#tabpane3"><img class="img-responsive" src="/mykplus/content/images/logo-hanoicab1.png"> <span class="img-hover"><span class="title">Hanoi Cab</span></span> </a><a class="codistributor-icon" href="/dich-vu/dong-phan-phoi#tabpane4"><img class="img-responsive" src="/mykplus/content/images/logo1.png"> <span class="img-hover"><span class="title">Viettel</span></span> </a>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+            <style>
+                .footer-menu {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                }
+
+                    .footer-menu > li {
+                        float: left;
+                        width: 50%;
+                    }
+
+                        .footer-menu > li:nth-child(2n+1) {
+                            clear: left;
+                        }
+
+                        .footer-menu > li > a {
+                            color: #eeeeee;
+                            font-size: 1em;
+                            margin: 20px 0 10px 0;
+                            height: 25px;
+                            line-height: 25px;
+                            font-weight: bold;
+                            display: block;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                        }
+
+                        .footer-menu > li a:hover {
+                            color: #8fc159;
+                        }
+
+                    .footer-menu li ul {
+                        padding: 0;
+                        margin: 0;
+                        list-style: none;
+                    }
+
+                        .footer-menu li ul li a {
+                            padding: 0;
+                            color: #c2c2c2;
+                        }
+            </style>
+            <div class=" footer-menu-container">
+                <ul class="footer-menu level-1">
+                    <li>
+                        <a href="#" target="_self">
+                            <div class="text">Tiêu điểm</div>
+
+                        </a>
+                        <ul class="level-2">
+                            <li>
+                                <a href="/tieu-diem/lich-phat-song" target="_self">
+                                    <div class="text">Lịch phát sóng</div>
+
+                                </a>
+
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <a href="/tieu-diem/trailers" target="_self">
+                                    <div class="text">Trailers</div>
+
+                                </a>
+
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <a href="/tieu-diem/tin-tuc" target="_self">
+                                    <div class="text">Tin tức</div>
+
+                                </a>
+
+                                <div class="clear"></div>
+                            </li>
+                        </ul>
+
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <a href="#" target="_self">
+                            <div class="text">Mua K+</div>
+
+                        </a>
+                        <ul class="level-2">
+                            <li>
+                                <a href="/5-ly-do-nen-chon-kplus" target="_self">
+                                    <div class="text">5 lý do nên chọn K+</div>
+
+                                </a>
+
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <a href="/dich-vu/goi-kenh-premium-hd" target="_self">
+                                    <div class="text">Gói kênh</div>
+
+                                </a>
+
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <a href="/dich-vu/lap-dat-kplus" target="_self">
+                                    <div class="text">Đăng ký lắp K+</div>
+
+                                </a>
+
+                                <div class="clear"></div>
+                            </li>
+                        </ul>
+
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <a href="#" target="_self">
+                            <div class="text">Hỗ trợ</div>
+
+                        </a>
+                        <ul class="level-2">
+                            <li>
+                                <a href="/ho-tro/gia-han-truc-tuyen" target="_self">
+                                    <div class="text">Gia hạn trực tuyến</div>
+
+                                </a>
+
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <a href="/ho-tro/cac-cach-gia-han" target="_self">
+                                    <div class="text">Các cách gia hạn</div>
+
+                                </a>
+
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <a href="/ho-tro/danh-sach-dai-ly" target="_self">
+                                    <div class="text">Tìm Đại lý gần nhất</div>
+
+                                </a>
+
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <a href="/ho-tro/cau-hoi-thuong-gap" target="_self">
+                                    <div class="text">Câu hỏi thường gặp</div>
+
+                                </a>
+
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <a href="/ho-tro/lien-he" target="_self">
+                                    <div class="text">Liên hệ</div>
+
+                                </a>
+
+                                <div class="clear"></div>
+                            </li>
+                        </ul>
+
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <a href="#" target="_self">
+                            <div class="text"><img alt="myK+ logo" class="img-responsive" height="22" src="https://cdn.kplus.vn/content/upload/1/images-mkt/mykplus-logo-new-08-2016.png" width="40"></div>
+
+                        </a>
+                        <ul class="level-2">
+                            <li>
+                                <a href="/my-kplus/gioi-thieu-mykplus" target="_self">
+                                    <div class="text">Giới thiệu myK+</div>
+
+                                </a>
+
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <a href="/my-kplus/cach-dang-ky-tai-khoan" target="_self">
+                                    <div class="text">Cách đăng ký myK+</div>
+
+                                </a>
+
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <a href="/mykplus/vi-vn/livetv" target="_self">
+                                    <div class="text">Xem TV trực tuyến</div>
+
+                                </a>
+
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <a href="/mykplus/vi-vn/manage" target="_self">
+                                    <div class="text">Tài khoản của tôi</div>
+
+                                </a>
+
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <a href="/my-kplus/hoi-dap-dich-vu-mykplus" target="_self">
+                                    <div class="text">Hỏi đáp về myK+</div>
+
+                                </a>
+
+                                <div class="clear"></div>
+                            </li>
+                        </ul>
+
+                        <div class="clear"></div>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row copyright">
+    <div class="container-kplus">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">©2009-2016 Truyền hình K+ giữ bản quyền.</div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        </div>
+    </div>
+</div>
+
+
+
+    </div>    
+
+    <div id="video-popup">
+        <div class="content-video"></div>
+    </div>
+
+    
+    <script src="/mykplus/Themes/kplus/Content/js/jquery.validate.unobtrusive.min.js"></script>
+    <script src="/mykplus/Themes/kplus/Content/js/bootstrap.min.js"></script>
+    <script src="/mykplus/Themes/kplus/Content/js/responsiveImg.js"></script>
+    <script src="/mykplus/Themes/kplus/Content/js/jasny-bootstrap.min.js"></script>
+    <script src="/mykplus/Themes/kplus/Content/js/classie.js"></script>
+    <script src="/mykplus/Themes/kplus/Content/js/jquery.cj_object_scaler.js"></script>
+    <script src="/mykplus/Themes/kplus/Content/js/jquery.fittext.js"></script>
+    <script src="/mykplus/Themes/kplus/Content/js/jquery.placeholder.min.js"></script>
+    <script src="/mykplus/Themes/kplus/Content/js/jquery.mousewheel.min.js"></script>
+    <script src="/mykplus/Themes/kplus/Content/js/jquery.touchSwipe.min.js"></script>
+    <script src="/mykplus/Themes/kplus/Content/js/jquery.transit.min.js"></script>
+    <script src="/mykplus/Themes/kplus/Content/js/jquery.ba-throttle-debounce.min.js"></script>
+    <script src="/mykplus/Themes/kplus/Content/js/greensock.js"></script>
+    <script src="/mykplus/Themes/kplus/Content/js/layerslider.kreaturamedia.jquery.js"></script>
+    <script src="/mykplus/Themes/kplus/Content/js/layerslider.transitions.js"></script>
+    <script src="/mykplus/Themes/kplus/Content/js/video.js"></script>
+    <script src="/mykplus/Themes/kplus/Content/js/videojs.embedcode.js"></script>
+    <script src="/mykplus/Themes/kplus/Content/js/customjs.js"></script>
+    <script src="/Apps/Programs/Content/jquery.jcarousel.min.js"></script>
+
+
+    
+    
+    <script>
+    $(document).ready(function () {
+        setActiveMenu(4, 0);
+    });
+    </script>
+    <script>
+        videojs.options.flash.swf = "/mykplus/Themes/kplus/Content/css/video-js.swf";
+
+        var hourText = "giờ";
+        var minuteText = "ph&#250;t";
+
+        var largeWidth = 1280;
+        var largeHeight = 1280;
+        var mediumWidth = 600;
+        var mediumHeight = 600;
+        var smallWidth = 300;
+        var smallHeight = 300;
+
+        $(function () {
+            var largeWidthName = "_w" + largeWidth + "_h" + largeHeight;
+            var mediumWidthName = "_w" + mediumWidth + "_h" + mediumHeight;
+            var smallWidthName = "_w" + smallWidth + "_h" + smallHeight;
+            $("img[data-responsive-src]").each(function (i, e) {
+                var src = $(e).data("src") || $(e).attr("src");
+                if (!src) {
+                    return;
+                }
+                var ext = src.lastIndexOf('.') >= 0 ? src.substr(src.lastIndexOf('.')) : '';
+                var fileName = src.lastIndexOf('.') >= 0 ? src.substr(0, src.lastIndexOf('.')) : src;
+                var width = $(window).innerWidth();
+                if (width > largeWidth) {
+                    // Original
+                    $(e).attr("src", fileName + ext);
+                } else if (width > mediumWidth) {
+                    // Large size
+                    $(e).attr("src", fileName + largeWidthName + ext);
+                } else if (width > smallWidth) {
+                    // Medium size
+                    $(e).attr("src", fileName + mediumWidthName + ext);
+                } else {
+                    // Small size
+                    $(e).attr("src", fileName + smallWidthName + ext);
+                }
+            });
+        });
+    </script>
+
+
+    <script src="/mykplus/bundles/jqueryval?v=NOVQDySGO89wzMzO5x7mWS4C_uAdynpZe_Lk2y-xEM41"></script>
+
+
+    <script src="/mykplus/Themes/bootstrapfix.js?v=20151209"></script>
+    <script src="/mykplus/Themes/captcha.js?v=20151209" type="text/javascript"></script>
+
+    
+
+    <!--[if lt IE 9]>
+        <script src="/mykplus/Themes/respond.js"></script>
+        <script src="/mykplus/Themes/html5shiv.js"></script>
+        <script src="/mykplus/Themes/placeholder-IE-fixes.js"></script>
+    <![endif]-->
+
+    <!-- Doan code de goi den Google Analytics-->
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script><script src="https://ssl.google-analytics.com/ga.js" type="text/javascript"></script><iframe style="display:none" height="1" width="1" src="//tags.tiqcdn.com/utag/xaxis/-kplus/prod/mobile.html?order_id=&amp;order_total=0.00&amp;order_subtotal=0.00&amp;lbData_MP1=&amp;refAction=direct&amp;order_currency=USD&amp;xaxis_title=%C4%90%C4%83ng%20nh%E1%BA%ADp%20-%20myK%2B&amp;xaxis_url=https%3A%2F%2Fwww.kplus.vn%2Fmykplus%2Fvi-vn%2Faccount%2Flogin&amp;xaxis_domain=www.kplus.vn&amp;xaxis_pathname=%2Fmykplus%2Fvi-vn%2Faccount%2Flogin&amp;xaxis_referrer="></iframe>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-15660122-2");
+            pageTracker._setDomainName("none");
+            pageTracker._setAllowLinker(true);
+            pageTracker._trackPageview();
+        } catch (err) { }
+
+    </script>
+
+
+
+
+</body></html>

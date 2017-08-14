@@ -1,0 +1,547 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Hệ thống tài khoản VTC </title>
+    <meta name="Description" content="Hệ thống tài khoản VTC tại địa chỉ https://id.vtc.vn  cho phép bạn nạp Vcoin, quản lý thông tin tài khoản, chuyển khoản Vcoin, và thanh toán nhiều dịch vụ tiện ích">
+    <meta name="Keywords" content="Hệ thống tài khoản VTC, vtcid, id.vtc.vn, nạp Vcoin, quản lý thông tin tài khoản, tài khoản VTC, chuyển khoản Vcoin, thanh toán, Vcoin">
+
+
+    <link href="Css/jquery.modal.css" rel="stylesheet">
+    <link href="Css/keyboard.css" rel="stylesheet">
+
+    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;correlator=374075027407695&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy1&amp;impl=fifs&amp;json_a=1&amp;eid=108809080%2C108809148%2C108809103&amp;sc=1&amp;sfv=1-0-9&amp;iu_parts=92088338%2CTT%C4%90T_ID_SSO_Test_Banner_550x350&amp;enc_prev_ius=%2F0%2F1&amp;prev_iu_szs=550x350&amp;cookie_enabled=1&amp;abxe=1&amp;lmt=1502646803&amp;dt=1502646803049&amp;ea=0&amp;frm=20&amp;biw=1024&amp;bih=768&amp;oid=3&amp;adxs=42&amp;adys=95&amp;adks=4263389565&amp;gut=v2&amp;ifi=1&amp;u_his=1&amp;u_h=768&amp;u_w=1024&amp;u_ah=768&amp;u_aw=1024&amp;u_cd=24&amp;u_nplug=1&amp;u_nmime=2&amp;u_sd=1&amp;flash=26.0.0&amp;url=https%3A%2F%2Fphatloc.vtcgame.vn%2Faccounts%2Faccount.login.aspx%3Fm%3D1%26sid%3D880416%26ur%3Dhttp%3A%2F%2Fphatloc.vtcgame.vn%2Fsan-ngoc%26continue%3Dhttp%3A%2F%2Fphatloc.vtcgame.vn%2Fsan-ngoc%2FAccount%2FLogOn&amp;dssz=23&amp;icsg=49120&amp;std=12&amp;vrg=142&amp;vis=1&amp;ga_vid=1272503876.1502646803&amp;ga_sid=1502646803&amp;ga_hid=549738464"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-5LZV6P"></script><script async="" src="//connect.facebook.net/en_US/fbds.js"></script><script async="" type="text/javascript" src="https://www.googletagservices.com/tag/js/gpt.js"></script><script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.keyboard.js"></script>
+    <script type="text/javascript" src="js/flexcroll.js"></script><style type="text/css">.flexcroll-hide-default {overflow: hidden !important;}</style>
+    <script type="text/javascript" src="js/jquery.modal.js"></script>
+    <link href="Css/flexcrollstyles.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico">
+    <link href="Css/sso.css?v=1.15" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript">
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        (function () {
+            var gads = document.createElement('script');
+            gads.async = true;
+            gads.type = 'text/javascript';
+            var useSSL = 'https:' == document.location.protocol;
+            gads.src = (useSSL ? 'https:' : 'http:') +
+            '//www.googletagservices.com/tag/js/gpt.js';
+            var node = document.getElementsByTagName('script')[0];
+            node.parentNode.insertBefore(gads, node);
+        })();
+    </script>
+
+    <script type="text/javascript">
+        googletag.cmd.push(function () {
+            googletag.defineSlot('/92088338/TTĐT_ID_SSO_Test_Banner_550x350', [550, 350], 'div-gpt-ad-1417840060212-0').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+	
+	<script>(function() {
+	  var _fbq = window._fbq || (window._fbq = []);
+	  if (!_fbq.loaded) {
+		var fbds = document.createElement('script');
+		fbds.async = true;
+		fbds.src = '//connect.facebook.net/en_US/fbds.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(fbds, s);
+		_fbq.loaded = true;
+	  }
+	  _fbq.push(['addPixelId', '762853693782510']);
+	    _fbq.push(['addPixelId', '1579878262241970']);
+		  _fbq.push(['addPixelId', '1602900403273704']);
+	})();
+	window._fbq = window._fbq || [];
+	window._fbq.push(['track', 'PixelInitialized', {}]);
+	</script>
+	<noscript>&lt;img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=762853693782510&amp;amp;ev=PixelInitialized" /&gt;</noscript>
+
+<noscript>&lt;img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1579878262241970&amp;amp;ev=PixelInitialized" /&gt;</noscript>
+<noscript>&lt;img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1602900403273704&amp;amp;ev=PixelInitialized" /&gt;</noscript>
+
+<script type="text/javascript">
+
+    function showMessage(msg) {
+        $('#messageText').append(msg);
+        // $('.popup_1').show();
+        $('#popup').click();
+    }
+    function showOtpForm() {
+        // $('.popup_2').show();
+        $('#popup').click();
+
+    }
+
+	    function popupMsg(response, link) {
+        var msg = "";
+        switch (response) {
+            case -33: msg = "Tài khoản của bạn chưa được kích hoạt !<br/> Vui lòng cập nhập thông tin để kích hoạt tài khoản";
+                $("#btnAgree33").attr('href', link).show();
+                break;
+            case -49: msg = "Tài khoản của bạn đang trong thời gian tạm khóa do không có bất kì hoạt động nào ở các dịch vụ của VTC trong thời gian 90 ngày liên tiếp. Để sử dụng tài khoản trở lại, vui lòng kích hoạt lại tài khoản.";
+                $("#btnAgree49").show();
+                break;
+        }
+
+        $('#popupMsg').click();
+        $("#txtPopupMsg").html(msg);
+    }
+	
+    function closeForm() {
+        $('#ex2').hide();
+
+
+    }
+	function otpKeypress(e) {
+        if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+            $('#btnCheckOtp').click();
+            return false;
+        }
+        return true;
+    }
+	
+	function txtPasswordKeypress(e) {
+        if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+            $('#btnLogin').click();
+            return false;
+        }
+        return true;
+    }
+
+</script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_142.js" async=""></script></head>
+
+
+
+
+
+
+
+
+<body style="">
+    <form name="FormLogin" method="post" action="./account.login.aspx?m=1&amp;sid=880416&amp;ur=http%3a%2f%2fphatloc.vtcgame.vn%2fsan-ngoc&amp;continue=http%3a%2f%2fphatloc.vtcgame.vn%2fsan-ngoc%2fAccount%2fLogOn" id="FormLogin">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="V+b5Ok7SRxeQ5nmNXFpIIhisGkh3QenyLeV/EevUybSlUhdsaAZkqmB/fc3ElB7UU4Ekhh7Gwb3kmfZid0HF2wFZL2XehtvQrBsPGB0T9qE8SbWU8MZBPcQaRKDL5uzhDfi7Gt+w/G/lx9fegbfouiSz5Sf12yalJ7elCCY2l84407x+KQen/CPA2rueJFT1rbYBZhyfr7gKKCi2B1sweydUSqLCKbYyduejnl2wfOmb3wOd/J8xL8Zh/LMDjCns8jZka6n9hEHVRdpNlwKVw5juGc2Nc68hZWWCm4JRN2YXw6LqAw19rQCKjZDQWFqb3Cts/P0rqmowt5yu9WsYxK9OmaedpCxawjrVLZzDnN2NTbFSX7Ti6tMWTO5j3TOOPX+mfg==">
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="ACB6525D">
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="oLId6bS+pfV1hEOPkZGfUUI7bLnH0efyNkl2Z41wFLldd3yeuOa3o+qQGAk2RzgcIJAI7LtY9fmYaN9cPCMzHPjsCG4nz2y9ockfYEX3N2DfLUpn93mcZkEmBYJLSE0jiPtVDDtRnHyIPN2iwMQ/n7/Ss7gpYjsc4bfXOUupjOSdvKKGnkQvVhRNnGyCJ/4g3/Lk47kNnZjLH41GL79ytoAYGyTrGJVhxn4tYj6wfjKcj2399Qbg/XiPre915SxV2vw/0g==">
+
+        <div id="header">
+            <div id="wrap">
+                <div class="logo">
+                    <a href="https://vtcgame.vn" target="_blank" class="opa">
+                        <img src="images/logo.png"></a>
+                </div>
+                <div class="hotro">
+                    <a href="javascript:void(0)" class="opa">
+                        <img src="images/hotro.png"></a>
+                </div>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="wrap">
+            <div class="left">
+                <div class="banner pos">
+
+                    <!-- TTĐT_ID_SSO_Test_VQS_Banner_550x350 -->
+                    <div id="div-gpt-ad-1417840060212-0" style="width: 550px; height: 350px;" data-google-query-id="CNfHwcfj1NUCFQGLvQodZyMBNg">
+                        <script type="text/javascript">
+                            googletag.cmd.push(function () { googletag.display('div-gpt-ad-1417840060212-0'); });
+                        </script>
+                    <div id="google_ads_iframe_/92088338/TTĐT_ID_SSO_Test_Banner_550x350_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/92088338/TTĐT_ID_SSO_Test_Banner_550x350_0" title="3rd party ad content" name="google_ads_iframe_/92088338/TTĐT_ID_SSO_Test_Banner_550x350_0" width="550" height="350" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+
+                </div>
+                <div class="tinhot">
+                    <a href="https://vtcgame.vn" target="_blank" class="opa">
+                        <img src="images/tinhot.png"></a>
+                </div>
+                <div id="divHotNews">
+                </div>
+            </div>
+            <div class="right">
+
+                <div class="boxlogin pos" id="divloginview">
+                    <div class="qr">
+                        <a href="javascript:void(0)" onclick="showDivAppMobileView();">
+                            <img src="images/qr.png"></a>
+                    </div>
+                    <div class="blue"></div>
+                    <div class="keyb" id="passwd" style="cursor: pointer">
+                        <a class="tooltip" title="Tăng tính bảo mật bằng việc sử dụng bàn phím ảo">
+                            <img src="images/keyb.jpg">
+                        </a>
+                    </div>
+                    <div class="dangnhap">Đăng nhập</div>
+                    <div class="padbot10">
+                        <input name="txtUserName" type="text" maxlength="18" id="txtUserName" tabindex="1" autocomplete="off" class="form1" value="Tên tài khoản" onblur="if(this.value==''){this.value='Tên tài khoản';}" onfocus="if(this.value=='Tên tài khoản' || this.value=='tên tài khoản'){this.value='';}">
+                    </div>
+                    <div class="padbot10">
+                        <input name="txtPassword" type="password" id="txtPassword" tabindex="2" autocomplete="off" class="qwerty form2 ui-keyboard-input ui-widget-content ui-corner-all" value="matkhau" onfocus="if(this.value=='matkhau'){this.value='';}" onblur="if(this.value==''){this.value='matkhau';}" onkeypress="return txtPasswordKeypress(event);" aria-haspopup="true" role="textbox">
+                    </div>
+                    <div class="nhapma">
+                        
+                    </div>
+                    
+                    <div class="clear"></div>
+                    <div class="padbot10">
+                        <input type="image" name="btnLogin" id="btnLogin" tabindex="4" class="opabutton" src="images/but_dangnhap.png" border="0" style="cursor: pointer;">
+                    </div>
+                    <div class="padbot10 textr"><a href="https://vtcgame.vn/tai-khoan/lay-lai-mat-khau-qua-sms.html">Quên mật khẩu?</a></div>
+                    <div class="padbot20">Hoặc đăng nhập bằng</div>
+                    <div class="tk">
+                        <a href="javascript:void(0)" onclick="document.getElementById('overlay').style.display = 'block'; window.location= 'https://phatloc.vtcgame.vn/account.sso.api/api/openid/login?ReturnUrl=' + encodeURIComponent(window.location.href );" class="opa">
+                            <img src="images/fb.png"></a>
+                        <a href="javascript:void(0)" onclick="document.getElementById('overlay').style.display = 'block'; window.location='https://phatloc.vtcgame.vn/account.sso.api/api/openid/login?openid_identifier=https://www.google.com/accounts/o8/id&amp;ReturnUrl=' + encodeURIComponent(window.location.href);" class="opa pad">
+                            <img src="images/googleicon.png"></a>
+                        <a href="javascript:void(0)" onclick=" document.getElementById('overlay').style.display = 'block'; window.location='https://phatloc.vtcgame.vn/account.sso.api/api/openid/login?openid_identifier=http://yahoo.com/&amp;ReturnUrl=' + encodeURIComponent(window.location.href );" class="opa">
+                            <img src="images/yh.png"></a>
+                    </div>
+                    <div class="dangky"><span>Bạn chưa có tài khoản?</span><a href="https://vtcgame.vn/tai-khoan/dang-ky-tai-khoan.html" class="opa"><img src="images/dangky.png"></a></div>
+                </div>
+
+
+                <div class="boxlogin pos" id="divappmobileview" style="display: none;">
+                    <div class="qr">
+                        <a href="javascript:void(0)" onclick="showDivLoginView();">
+                            <img src="images/pc.png"></a>
+                    </div>
+                    <div class="blue"></div>
+                   <div class="dangnhap" id="divappTitle" style="font-size:17px;">download<br>for mobile</div>
+                    <div class="box1">
+                        <ul class="tab" id="ulListIconApp">
+                        </ul>
+                        <div class="box2 clear">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="3">
+                                <tbody>
+                                    <tr>
+                                        <td align="center">
+                                            <img id="imgQrCodeAppStore" width="113px" height="113px" src="images/qr1.jpg"></td>
+                                        <td align="center">
+                                            <img id="imgQrCodeGooglePlay" width="113px" height="113px" src="images/qr1.jpg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" height="32"><a id="appAppStoreLink" href="" class="move">
+                                            <img src="images/appios.png"></a></td>
+                                        <td align="center" height="32"><a id="appGooglePlayLink" href="" class="move">
+                                            <img src="images/appand.png"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td height="10" colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="text">Mô tả:
+                <p id="appDescription">Tooltip khi hover vào các avatar app, tool Tooltip khi hover vào các avatar app, tip Tooltip khi hover vào các avatar app</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+
+
+            </div>
+            <div class="clear"></div>
+            <div class="footer">
+                <div class="fl">
+                   <div style="text-align: center;">
+						TỔNG CÔNG TY TRUYỀN THÔNG ĐA PHƯƠNG TIỆN (VTC) <br>
+						Hà Nội (Trụ sở chính): Tầng 12, Tòa nhà VTC 23 Lạc Trung, Quận Hai Bà Trưng, Hà Nội<br>
+						TP. Đà Nẵng (chi nhánh): 158 Lê Đình Dương, quận Hải Châu, TP. Đà Nẵng<br>
+						Tp. Hồ Chí Minh (chi nhánh): 128E Nguyễn Đình Chính, Phường 8, Quận Phú Nhuận, Tp. Hồ Chí Minh<br>
+						Hotline: 19001530 | Fax: 04-3636-7728 | Website: <a href="http://hotro.vtc.vn" target="_blank" style="display: inline-block;"> http://hotro.vtc.vn </a> | <br>
+						FB: <a href="https://www.facebook.com/groups/vtccareplus/" target="_blank" style="display: inline-block;"> https://www.facebook.com/groups/vtccareplus </a>  <br>
+
+					</div>
+                </div>
+				
+				
+                
+                <div class="clear"></div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <p><a id="popup" href="#ex2" rel="modal:open"></a></p>
+
+            <div id="ex2" class="popup modal" style="margin: auto; margin-top: 50px;display: none;">
+                <div class="close"><a href="">
+                    <img src="images/close.png"></a></div>
+                <div class="boxpopup">
+                    <p>Bạn đang sử dụng tính năng bảo mật đăng nhập bằng OTP</p>
+                    <p>
+                        <select name="ddlOTPType" id="ddlOTPType">
+	<option value="1">OTP SMS</option>
+	<option value="2">OTP APP</option>
+
+</select>
+                        &nbsp; 
+                        <input name="txtOtp" type="password" maxlength="6" id="txtOtp" onkeypress="return otpKeypress(event);">
+                    </p>
+                    
+                    <div style="clear: both"></div>
+                      <p class="red" id="messageText"></p>
+                    <p>
+                        <input type="submit" name="btnCheckOtp" value="Đồng ý" id="btnCheckOtp" class="btnboxpopup"></p>
+                    <p class="red">Để lấy mã OTP SMS, soạn EB OTP gửi 1900 1530<br>
+                        Để lấy mã OTP APP, vui lòng bật App VTC OTP</p>
+                </div>
+            </div>
+			
+			 
+        <p><a id="popupMsg" href="#popupMsg_" rel="modal:open"></a></p>
+
+            <div id="popupMsg_" class="popup modal" style="margin: auto; margin-top: 50px;display: none;">
+                <div class="close"><a href="">
+                    <img src="images/close.png"></a></div>
+                <div class="boxpopup">
+                    <p id="txtPopupMsg"></p>                    
+                    <p>
+                        <a id="btnAgree33" class="btnboxpopup" style="border: none;cursor: pointer;display:none; ">Đồng ý</a>                        
+                        <input type="submit" name="btnAgree49" value="Đồng ý" id="btnAgree49" class="btnboxpopup" style="border: none;cursor: pointer;display:none; ">
+                    </p>                   
+                </div>
+            </div>
+
+
+
+
+        <div id="overlay">
+            <img src="Images/bigrotation2.gif" id="img-load">
+        </div>
+
+
+        <input type="hidden" name="plugins" id="plugins" value="">
+        <input type="hidden" name="fonts" id="fonts" value="">
+        <input type="hidden" name="timezone" id="timezone" value="">
+        <input type="hidden" name="video" id="video" value="">
+        <input type="hidden" name="ETagIdentity" id="ETagIdentity" value="">
+    </form>
+
+    <!-- Google Tag Manager -->
+    <noscript>
+        &lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-5LZV6P"
+            height="0" width="0" style="display: none; visibility: hidden"&gt;&lt;/iframe&gt;
+    </noscript>
+    <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-5LZV6P');</script>
+    <!-- End Google Tag Manager -->
+
+    <div id="flashcontent"></div>
+
+
+
+
+
+    <script type="text/javascript">
+       var VtcidUrl = "https://vtcgame.vn/";
+        var mediaUrl = "https://vtcgame.vn/media/files/";
+        var InconLinkRoot = 'https://ebank.vtc.vn/media/images/news/';
+         getListNewByCate();
+        //getListAppMobile();
+        var listApp_mobile = '';
+      function getListNewByCate() {
+            var TopCount = 2;
+            $.ajax({
+                type: "GET",
+                url: VtcidUrl + "Handler/ArticleVTCID.ashx?t=getListNewByCate",
+                cache: false,
+                xhrFields: {
+                    withCredentials: true
+                },
+                success: function (data) {
+                    var ListData = data.ListNews;
+                    if (ListData.length > 0) {
+                        var html = '';
+                        var totalNews = ListData.length > 2 ? 2 : ListData.length;
+                        for (var i = 0; i < totalNews; i++) {
+                            var item = ListData[i];
+                            var title = item.Title;
+                            var arrTitle = title.split(' ');
+                            var maxLengthTitle=10;
+                            if (arrTitle.length > maxLengthTitle) {
+                                title = '';
+                                for (var j = 0; j <= maxLengthTitle; j++) {
+                                    if (j == maxLengthTitle) {
+                                        title += arrTitle[j] + ' ...';
+                                    }
+                                    else
+                                    title += arrTitle[j] + ' ';
+                                }
+                            }
+                           
+                            html += '<div class="boxtin fl"><a title="' + item.Title + '" href="' + item.Link + '" target="_blank"><img width="135px" height="70px" src="' + item.ImageUrl + '" />' + title + '</a></div>';
+                        }
+                        $("#divHotNews").html(html);
+                    } else {
+                        $("#divHotNews").html('');
+                    }
+                }
+            });
+        }
+
+        function getListAppMobile() {
+
+            $.ajax({
+                type: "GET",
+                url: VtcidUrl + "tin-tuc/Handler/GuideHandler.ashx?t=getListAppMobile&TopCount=4",
+                cache: false,
+                xhrFields: {
+                    withCredentials: true
+                },
+                success: function (data) {
+                    var ListData = data.Items;
+                    listApp_mobile = ListData;
+                    if (ListData.length > 0) {
+                        var html = '';
+                        for (var i = 0; i < ListData.length; i++) {
+                            var item = ListData[i];
+                            var link = InconLinkRoot + item.IconSrc;
+
+                            if (i == 0) {
+                                html += '<li class="chon" id="app_' + item.AppId + '" onclick="getAppMobileInfo(\'app_' + item.AppId + '\')"><img src="' + link + '"></li>';
+                            }
+                            else {
+                                html += '<li id="app_' + item.AppId + '" onclick="getAppMobileInfo(\'app_' + item.AppId + '\')"><img src="' + link + '"></li>';
+                            }
+                        }
+                        $("#ulListIconApp").html(html);
+                        getAppMobileInfo('app_' + ListData[0].AppId);
+                    }
+                }
+            });
+        }
+
+        function getAppMobileInfo(id) {
+            var ListData = listApp_mobile;
+            var AppId = id.split('_')[1];
+            if (ListData.length > 0) {
+                var html = '';
+                for (var i = 0; i < ListData.length; i++) {
+                    var item = ListData[i];
+                    var link = InconLinkRoot + item.IconSrc;
+
+                    if (item.AppId.toString() == AppId) {
+                        $("#divappTitle").html('Tải ' + item.AppName + '<br/>cho điện thoại');
+                        $("#imgQrCodeAppStore").attr('src', 'https://api.qrserver.com/v1/create-qr-code/?size=113x113&data=' + item.DownloadIOS);
+                        $("#imgQrCodeGooglePlay").attr('src', 'https://api.qrserver.com/v1/create-qr-code/?size=113x113&data=' + item.DownloadAndroid);
+                        $("#appAppStoreLink").attr('href', item.DownloadIOS);
+                        $("#appGooglePlayLink").attr('href', item.DownloadAndroid);
+                        $("#appDescription").html(item.Description);
+                        $("ul.tab").find('li').removeClass('chon');
+                        $('#' + id).addClass("chon");
+                    }
+                }
+            }
+        }
+
+
+
+
+    </script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('.qwerty').keyboard({
+                openOn: null,
+                stayOpen: null,
+                layout: 'qwerty'
+            });
+            $('#passwd').click(function () {
+                $('.qwerty').getkeyboard().reveal();
+            });
+
+        });
+
+
+        function showDivLoginView() {
+            $('#divloginview').show();
+            $('#divappmobileview').hide();
+        }
+        function showDivAppMobileView() {
+            $('#divappmobileview').show();
+            $('#divloginview').hide();
+
+        }
+
+    </script>
+	
+	<!-- Google Code for Remarketing Tag -->
+	<!--------------------------------------------------
+	Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+	--------------------------------------------------->
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	var google_conversion_id = 959906755;
+	var google_custom_params = window.google_tag_params;
+	var google_remarketing_only = true;
+	/* ]]> */
+	</script>
+	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+	</script><iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/959906755/?random=1502646802844&amp;cv=8&amp;fst=1502646802844&amp;num=1&amp;fmt=1&amp;guid=ON&amp;u_h=768&amp;u_w=1024&amp;u_ah=768&amp;u_aw=1024&amp;u_cd=24&amp;u_his=1&amp;u_tz=0&amp;u_java=false&amp;u_nplug=1&amp;u_nmime=2&amp;frm=0&amp;url=https%3A%2F%2Fphatloc.vtcgame.vn%2Faccounts%2Faccount.login.aspx%3Fm%3D1%26sid%3D880416%26ur%3Dhttp%3A%2F%2Fphatloc.vtcgame.vn%2Fsan-ngoc%26continue%3Dhttp%3A%2F%2Fphatloc.vtcgame.vn%2Fsan-ngoc%2FAccount%2FLogOn&amp;tiba=H%E1%BB%87%20th%E1%BB%91ng%20t%C3%A0i%20kho%E1%BA%A3n%20VTC" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no"></iframe>
+	<noscript>
+	&lt;div style="display:inline;"&gt;
+	&lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/959906755/?value=0&amp;amp;guid=ON&amp;amp;script=0"/&gt;
+	&lt;/div&gt;
+	</noscript>
+
+
+
+<script type="text/javascript">
+    var imagereolad;
+    reloadimg = function (obj) { imagereolad = obj; docheck('Page/rndimg.aspx', displaycheck); }
+    function docheck(url, callback) { getHTTPRequestObject(); if (xmlhttp) { try { xmlhttp.open("GET", url, true); xmlhttp.onreadystatechange = displaycheck; xmlhttp.send(null); } catch (err) { } } }
+    function displaycheck() { if (xmlhttp.readyState == 4) { var now = new Date(); $control(imagereolad).src = 'Page/rndimg.aspx?' + now.getTime(); } }
+    function getUrl() {
+        return 'http://goo.gl/3rUjKZ';
+    }
+</script>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+   ga('create', 'UA-37547585-4', 'vtc.vn');
+    ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 994125200;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script><iframe src="https://tpc.googlesyndication.com/safeframe/1-0-9/html/container.html" style="visibility: hidden; display: none;"></iframe><img height="1" width="1" border="0" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/994125200/?random=1502646802970&amp;cv=8&amp;fst=1502646802844&amp;num=2&amp;fmt=1&amp;guid=ON&amp;u_h=768&amp;u_w=1024&amp;u_ah=768&amp;u_aw=1024&amp;u_cd=24&amp;u_his=1&amp;u_tz=0&amp;u_java=false&amp;u_nplug=1&amp;u_nmime=2&amp;frm=0&amp;url=https%3A%2F%2Fphatloc.vtcgame.vn%2Faccounts%2Faccount.login.aspx%3Fm%3D1%26sid%3D880416%26ur%3Dhttp%3A%2F%2Fphatloc.vtcgame.vn%2Fsan-ngoc%26continue%3Dhttp%3A%2F%2Fphatloc.vtcgame.vn%2Fsan-ngoc%2FAccount%2FLogOn&amp;tiba=H%E1%BB%87%20th%E1%BB%91ng%20t%C3%A0i%20kho%E1%BA%A3n%20VTC" style="display:none">
+<noscript>
+&lt;div style="display:inline;"&gt;
+&lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/994125200/?value=0&amp;amp;guid=ON&amp;amp;script=0"/&gt;
+&lt;/div&gt;
+</noscript>
+
+
+
+<!--<script src="//id.vtc.vn/accounts/js/device/SSODeviceFingerprint.js"></script>-->
+
+
+ <script type="text/javascript" id="">(function(d,b,a){(b[a]=b[a]||[]).push(function(){try{b.yaCounter40625525=new Ya.Metrika({id:40625525,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,webvisor:!0,trackHash:!0})}catch(f){}});var e=d.getElementsByTagName("script")[0],c=d.createElement("script");a=function(){e.parentNode.insertBefore(c,e)};c.type="text/javascript";c.async=!0;c.src="https://mc.yandex.ru/metrika/watch.js";"[object Opera]"==b.opera?d.addEventListener("DOMContentLoaded",a,!1):a()})(document,window,"yandex_metrika_callbacks");</script> </body></html>
